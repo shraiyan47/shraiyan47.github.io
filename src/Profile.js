@@ -24,7 +24,7 @@ export default function Profile() {
                             <ul className="list-group list-group-flush rounded-3">
                                 <li className="list-group-item d-flex justify-content-between align-items-center p-3">
                                     <i className="fas fa-globe fa-lg text-warning"></i>
-                                    <p className="mb-0">https://shr47.github.io</p>
+                                    <p className="mb-0">https://shraiyan47.github.io</p>
                                 </li>
                                 <li className="list-group-item d-flex justify-content-between align-items-center p-3">
                                     <i className="fab fa-github fa-lg" style={{ color: "#333333" }}></i>
@@ -33,7 +33,7 @@ export default function Profile() {
 
                                 <li className="list-group-item d-flex justify-content-between align-items-center p-3">
                                     <i className="fab fa-stack-overflow fa-lg" style={{ color: "#ac2bac" }}></i>
-                                    <a href='https://stackoverflow.com/users/11209333/mr-shr47' target="_blank" rel="noreferrer"><p className="mb-0">stackoverflow.com/users/11209333/mr-shr47</p></a>
+                                    <a href='https://stackoverflow.com/users/11209333/mr-shr47' target="_blank" rel="noreferrer"> <p className="mb-0">stackoverflow.com/users/11209333/mr-shr47</p></a>
                                 </li>
                                 {/* <li className="list-group-item d-flex justify-content-between align-items-center p-3">
                                     <i className="fab fa-facebook-f fa-lg" style={{ color: "#3b5998" }}></i>
@@ -48,8 +48,20 @@ export default function Profile() {
                         <div class="card-body">
                             <ul class="list-group list-group-light list-group-small">
                                 <li class="list-group-item px-4"><b>Daffodil International University</b></li>
-                                <li class="list-group-item px-4">September 2015 - December 2019</li>
-                                <li class="list-group-item px-4">B.Sc in Software Engineering</li>
+                                <li class="list-group-item px-5">September 2015 - December 2019</li>
+                                <li class="list-group-item px-5">B.Sc in Software Engineering</li>
+                            </ul>
+
+                            <ul class="list-group list-group-light list-group-small">
+                                <li class="list-group-item px-4"><b>Ideal College, Dhanmondi</b></li>
+                                <li class="list-group-item px-5"> 2011 -  2014</li>
+                                <li class="list-group-item px-5">HSC</li>
+                            </ul>
+
+                            <ul class="list-group list-group-light list-group-small">
+                                <li class="list-group-item px-4"><b>Dhanmondi Govt. Boys' High School</b></li>
+                                <li class="list-group-item px-5"> 2001 -  2011</li>
+                                <li class="list-group-item px-5">SSC</li>
                             </ul>
                             
 
@@ -99,7 +111,7 @@ export default function Profile() {
                                     <p className="mb-0">Mobile</p>
                                 </div>
                                 <div className="col-sm-9">
-                                    <p className="text-muted mb-0"> +88 01859506936 [Don't Call, Send me a message on WhatsApp]</p>
+                                    <p className="text-muted mb-0"> +88 01859506936 </p>
                                 </div>
                             </div>
                             <hr />
