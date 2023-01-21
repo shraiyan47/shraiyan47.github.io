@@ -72,14 +72,14 @@ export default function Profile() {
 
                             <ul class="list-group list-group-light list-group-small">
                                 <li class="list-group-item px-4"><b>Ideal College, Dhanmondi</b></li>
-                                <li class="list-group-item px-5"> 2011 -  2014</li>
-                                <li class="list-group-item px-5">HSC</li>
+                                <li class="list-group-item px-5"> 2011 - 2014 || HSC</li>
+                                
                             </ul>
 
                             <ul class="list-group list-group-light list-group-small">
                                 <li class="list-group-item px-4"><b>Dhanmondi Govt. Boys' High School</b></li>
-                                <li class="list-group-item px-5"> 2001 -  2011</li>
-                                <li class="list-group-item px-5">SSC</li>
+                                <li class="list-group-item px-5"> 2001 - 2011 || SSC</li>
+                                
                             </ul>
 
 
@@ -158,6 +158,11 @@ export default function Profile() {
                                 <div className="progress-bar" role="progressbar" style={{ width: "90%" }} aria-valuenow="90"
                                     aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
+                            <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>Bootstrap</p>
+                            <div className="progress rounded" style={{ height: "5px" }}>
+                                <div className="progress-bar" role="progressbar" style={{ width: "90%" }} aria-valuenow="90"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                             <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>JavaScript</p>
                             <div className="progress rounded" style={{ height: "5px" }}>
                                 <div className="progress-bar" role="progressbar" style={{ width: "70%" }} aria-valuenow="70"
@@ -171,6 +176,11 @@ export default function Profile() {
                             <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>PHP</p>
                             <div className="progress rounded" style={{ height: "5px" }}>
                                 <div className="progress-bar" role="progressbar" style={{ width: "75%" }} aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>NodeJS</p>
+                            <div className="progress rounded" style={{ height: "5px" }}>
+                                <div className="progress-bar" role="progressbar" style={{ width: "50%" }} aria-valuenow="75"
                                     aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>MySQL</p>
@@ -209,7 +219,8 @@ export default function Profile() {
                                 </div>
                                 <div class="timeline-container timeline-left">
                                     <div class="timeline-content">
-                                        <h4 className='text-danger'>June 2021</h4>
+                                        <h4 className='text-danger'>June 2021 </h4>
+                                        <small>(Currently Working)</small>
                                         <h5 className='text-info'>LEADS Corporation Limited</h5>
                                         <p className='text'>Working here as a ReactJS based front-end developer. Also doing RND on AI. Learning NodeJS and trying to get the MERN Stack as well.</p>
                                     </div>
