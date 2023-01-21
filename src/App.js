@@ -22,7 +22,7 @@ function App() {
           </div> */}
 
           <h3 className='text-center mt-2'>
-            Shahadat Hossain's Profile
+            Shahadat Hossain's Portfolio
           </h3>
           <hr />
 

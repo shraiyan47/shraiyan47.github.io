@@ -1,22 +1,39 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './assets/custom.css'
 import Propic from './assets/Caaspture.PNG'
+import CV from './assets/Shahadat Hossain CV with Photo attached -2.pdf'
 
 export default function Profile() {
+
+    useEffect(() => {
+        document.title = 'Shahadat\'s Portfolio || SHR47';
+
+        document.head.innerHTML += `
+            <meta name='description' content='This a portfolio of Shahadat Hossain. He is a Software Engineer. He like to do coding, problem solving. He started his carrer at 2020 as a Web based software developer. '/>
+            <meta name='keywords' content='Software Engineer, Shahadat Hossain, Raiyan, SHR47, PHP Developer, ReactJS Developer, React, ReactJS, JS, JavaScript, Web Developer, Software, Engineer '/>
+            <meta name='author' content='Shahadat Hossain (Raiyan) || SHR47'/>
+            `
+    }, []);
+
     return (
         <div>
             <div className="row">
                 <div className="col-lg-4">
                     <div className="card mb-4">
                         <div className="card-body text-center">
-                            <img src={Propic} alt="Shahadat Hossain (Raiyan) #shr47"
+                            <img src={Propic} alt="Shahadat Hossain (Raiyan) || #shr47"
                                 className="rounded-circle img-fluid" style={{ width: "150px" }} />
+                            <h1 style={{display: "none"}}>Shahadat Hossain Raiyan, shr47, Software Engineer</h1>
                             <h5 className="my-3">Shahadat Hossain</h5>
                             <p className="text-muted mb-1">Full Stack Developer</p>
                             <p className="text-muted mb-4">Dhaka, Bangladesh</p>
                             <div className="d-flex justify-content-center mb-2">
                                 {/* <button type="button" className="btn btn-primary">Follow</button> */}
                                 <a href="mailto: shraiyan47@gmail.com"><button type="button" className="btn btn-outline-primary ms-1">Email Me</button></a>
+                                <a download={CV} href={CV}><button type="button" className="btn btn-outline-primary ms-1">
+                                    <i class="fa fa-download" aria-hidden="true"></i> &nbsp;
+                                    CV
+                                </button></a>
                             </div>
                         </div>
                     </div>
@@ -25,21 +42,21 @@ export default function Profile() {
                             <ul className="list-group list-group-flush rounded-3">
                                 <li className="list-group-item d-flex justify-content-between align-items-center p-3">
                                     <i className="fas fa-globe fa-lg text-warning"></i>
-                                    <p className="mb-0">https://shraiyan47.github.io</p>
+                                    <a href='https://shraiyan47.github.io' target="_blank" rel="noreferrer"><p className="mb-0">shraiyan47.github.io</p></a>
                                 </li>
                                 <li className="list-group-item d-flex justify-content-between align-items-center p-3">
                                     <i className="fab fa-github fa-lg" style={{ color: "#333333" }}></i>
-                                    <a href='https://github.com/shraiyan47' target="_blank" rel="noreferrer"><p className="mb-0">github.com/shraiyan47</p></a>
+                                    <a href='https://github.com/shraiyan47' target="_blank" rel="noreferrer"><p className="mb-0">Github || shraiyan47</p></a>
                                 </li>
 
                                 <li className="list-group-item d-flex justify-content-between align-items-center p-3">
                                     <i className="fab fa-stack-overflow fa-lg" style={{ color: "#ac2bac" }}></i>
-                                    <a href='https://stackoverflow.com/users/11209333/mr-shr47' target="_blank" rel="noreferrer"> <p className="mb-0">stackoverflow.com/users/11209333/mr-shr47</p></a>
+                                    <a href='https://stackoverflow.com/users/11209333/mr-shr47' target="_blank" rel="noreferrer"> <p className="mb-0">Stackoverflow || mr-shr47</p></a>
                                 </li>
-                                {/* <li className="list-group-item d-flex justify-content-between align-items-center p-3">
-                                    <i className="fab fa-facebook-f fa-lg" style={{ color: "#3b5998" }}></i>
-                                    <p className="mb-0">mdbootstrap</p>
-                                </li> */}
+                                <li className="list-group-item d-flex justify-content-between align-items-center p-3">
+                                    <i className="fab fa-linkedin-in fa-lg" style={{ color: "#3b5998" }}></i>
+                                    <a href='https://stackoverflow.com/users/11209333/mr-shr47' target="_blank" rel="noreferrer"> <p className="mb-0">LinkedIn || shahadat-hossain-swe</p></a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -64,7 +81,7 @@ export default function Profile() {
                                 <li class="list-group-item px-5"> 2001 -  2011</li>
                                 <li class="list-group-item px-5">SSC</li>
                             </ul>
-                            
+
 
 
                         </div>
@@ -144,6 +161,11 @@ export default function Profile() {
                             <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>JavaScript</p>
                             <div className="progress rounded" style={{ height: "5px" }}>
                                 <div className="progress-bar" role="progressbar" style={{ width: "70%" }} aria-valuenow="70"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>ReactJS</p>
+                            <div className="progress rounded" style={{ height: "5px" }}>
+                                <div className="progress-bar" role="progressbar" style={{ width: "60%" }} aria-valuenow="70"
                                     aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>PHP</p>
