@@ -1,5 +1,6 @@
 import React from 'react'
 import './assets/custom.css'
+import Propic from './assets/Caaspture.PNG'
 
 export default function Profile() {
     return (
@@ -8,7 +9,7 @@ export default function Profile() {
                 <div className="col-lg-4">
                     <div className="card mb-4">
                         <div className="card-body text-center">
-                            <img src="https://github.com/shraiyan47/shraiyan47.github.io/blob/main/src/assets/Caaspture.PNG?raw=true" alt="Shahadat Hossain (Raiyan) #shr47"
+                            <img src={Propic} alt="Shahadat Hossain (Raiyan) #shr47"
                                 className="rounded-circle img-fluid" style={{ width: "150px" }} />
                             <h5 className="my-3">Shahadat Hossain</h5>
                             <p className="text-muted mb-1">Full Stack Developer</p>
