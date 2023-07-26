@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import './assets/custom.css'
 import Propic from './assets/Caaspture.PNG'
+import profileData from "./assets/data.json"
 import CV from './assets/Shahadat Hossain CV - +8801859506936 .pdf'
 
 export default function Profile() {
@@ -9,82 +10,89 @@ export default function Profile() {
         document.title = 'Shahadat\'s Portfolio || SHR47';
 
         document.head.innerHTML += `
-            <meta name='description' content='This a portfolio of Shahadat Hossain. He is a Software Engineer. He like to do coding, problem solving. He started his carrer at 2020 as a Web based software developer. '/>
-            <meta name='keywords' content='Software Engineer, Shahadat Hossain, Raiyan, SHR47, #shr47, PHP Developer, ReactJS Developer, React, ReactJS, JS, JavaScript, Web Developer, Software, Engineer, PHP, Codeigniter '/>
-            <meta name='author' content='Shahadat Hossain (Raiyan)'/>
+            <meta name='description' content='${profileData.meta_description}'/>
+            <meta name='keywords' content='${profileData.meta_keywords}'/>
+            <meta name='author' content='${profileData.meta_author}'/>
             `
     }, []);
+
+    const handleDownloadClick = () => {
+        // Create an anchor element to trigger the download
+        const downloadLink = document.createElement('a');
+        downloadLink.href = CV;
+        downloadLink.download = profileData.cv_pdf;
+        downloadLink.click();
+    };
+
 
     return (
         <div>
             <div className="row">
                 <div className="col-lg-4">
+
+                    {/* Short Me  */}
                     <div className="card mb-4">
                         <div className="card-body text-center">
                             <img src={Propic} alt="Shahadat Hossain (Raiyan) || #shr47"
                                 className="rounded-circle img-fluid" style={{ width: "150px" }} />
                             <h1 style={{ display: "none" }}>Shahadat Hossain Raiyan, shr47, Software Engineer</h1>
-                            <h5 className="my-3">Shahadat Hossain</h5>
-                            <p className="text-muted mb-1">Full Stack Developer</p>
-                            <p className="text-muted mb-4">Dhaka, Bangladesh</p>
+                            <h5 className="my-3">{profileData.fullname}</h5>
+                            <p className="text-muted mb-1">{profileData.position}</p>
+                            <p className="text-muted mb-4">{profileData.short_location}</p>
                             <div className="d-flex justify-content-center mb-2">
                                 {/* <button type="button" className="btn btn-primary">Follow</button> */}
-                                <a href="mailto: shraiyan47@gmail.com"><button type="button" className="btn btn-outline-primary ms-1"> <b>✉</b> Email Me</button></a>
-                                <a href="tel:+8801859506936"><button type="button" className="btn btn-outline-primary ms-1">📞 Call Me</button></a>
-                                <a download={CV} href={CV}><button type="button" className="btn btn-outline-primary ms-1">
+                                <a href={"mailto: " + profileData.email}><button type="button" className="btn btn-outline-primary ms-1"> <b>✉</b> Email Me</button></a>
+                                <a href={"tel:" + profileData.phone}><button type="button" className="btn btn-outline-primary ms-1">📞 Call Me</button></a>
+                                <button type="button" className="btn btn-outline-primary ms-1" onClick={handleDownloadClick}>
                                     <i class="fa fa-download" aria-hidden="true"></i> &nbsp;
                                     CV
-                                </button></a>
+                                </button>
+
                             </div>
                         </div>
                     </div>
+
+                    {/* Online URLs  */}
                     <div className="card mb-4 mb-lg-0">
                         <div className="card-body p-0">
                             <ul className="list-group list-group-flush rounded-3">
                                 <li className="list-group-item d-flex justify-content-between align-items-center p-3">
                                     <i className="fas fa-globe fa-lg text-warning"></i>
-                                    <a href='https://shraiyan47.github.io' target="_blank" rel="noreferrer"><p className="mb-0">shraiyan47.github.io</p></a>
+                                    <a href={profileData.website} target="_blank" rel="noreferrer"><p className="mb-0">shraiyan47.github.io</p></a>
                                 </li>
                                 <li className="list-group-item d-flex justify-content-between align-items-center p-3">
                                     <i className="fab fa-github fa-lg" style={{ color: "#333333" }}></i>
-                                    <a href='https://github.com/shraiyan47' target="_blank" rel="noreferrer"><p className="mb-0">Github || shraiyan47</p></a>
+                                    <a href={profileData.github} target="_blank" rel="noreferrer"><p className="mb-0">Github || shraiyan47</p></a>
                                 </li>
 
                                 <li className="list-group-item d-flex justify-content-between align-items-center p-3">
                                     <i className="fab fa-stack-overflow fa-lg" style={{ color: "#ac2bac" }}></i>
-                                    <a href='https://stackoverflow.com/users/11209333/mr-shr47' target="_blank" rel="noreferrer"> <p className="mb-0">Stackoverflow || mr-shr47</p></a>
+                                    <a href={profileData.stackoverflow} target="_blank" rel="noreferrer"> <p className="mb-0">Stackoverflow || mr-shr47</p></a>
                                 </li>
                                 <li className="list-group-item d-flex justify-content-between align-items-center p-3">
                                     <i className="fab fa-linkedin-in fa-lg" style={{ color: "#3b5998" }}></i>
-                                    <a href='https://www.linkedin.com/in/shahadat-hossain-swe' target="_blank" rel="noreferrer"> <p className="mb-0">LinkedIn || shahadat-hossain-swe</p></a>
+                                    <a href={profileData.linkedin} target="_blank" rel="noreferrer"> <p className="mb-0">LinkedIn || shahadat-hossain-swe</p></a>
                                 </li>
                             </ul>
                         </div>
                     </div>
 
+                    {/* Education  */}
                     <div className="card mt-4 mb-lg-0">
                         <h5 class="card-header">Education</h5>
                         <div class="card-body">
-                            <ul class="list-group list-group-light list-group-small">
-                                <li class="list-group-item px-4"><b>Daffodil International University</b></li>
-                                <li class="list-group-item px-5">September 2015 - December 2019</li>
-                                <li class="list-group-item px-5">B.Sc in Software Engineering</li>
-                            </ul>
+                            {
+                                profileData.education.map((x, i) =>
+                                (<>
+                                    <ul class="list-group list-group-light list-group-small" key={i}>
+                                        <li class="list-group-item px-4"><b>{x.inst_name}</b></li>
+                                        <li class="list-group-item px-5">{x.duration}</li>
+                                        <li class="list-group-item px-5">{x.degree}</li>
+                                    </ul>
+                                </>)
 
-                            <ul class="list-group list-group-light list-group-small">
-                                <li class="list-group-item px-4"><b>Ideal College, Dhanmondi</b></li>
-                                <li class="list-group-item px-5"> 2011 - 2014 || HSC</li>
-
-                            </ul>
-
-                            <ul class="list-group list-group-light list-group-small">
-                                <li class="list-group-item px-4"><b>Dhanmondi Govt. Boys' High School</b></li>
-                                <li class="list-group-item px-5"> 2001 - 2011 || SSC</li>
-
-                            </ul>
-
-
-
+                                )
+                            }
                         </div>
                     </div>
 
@@ -96,46 +104,40 @@ export default function Profile() {
 
                         </div>
                         <div className="card-body">
-                            <p className="mb-1" style={{ fontSize: ".77rem" }}>HTML, CSS</p>
-                            <div className="progress rounded" style={{ height: "5px" }}>
-                                <div className="progress-bar" role="progressbar" style={{ width: "75%" }} aria-valuenow="90"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>Bootstrap</p>
-                            <div className="progress rounded" style={{ height: "5px" }}>
-                                <div className="progress-bar" role="progressbar" style={{ width: "75%" }} aria-valuenow="90"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>JavaScript</p>
-                            <div className="progress rounded" style={{ height: "5px" }}>
-                                <div className="progress-bar" role="progressbar" style={{ width: "50%" }} aria-valuenow="70"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>ReactJS</p>
-                            <div className="progress rounded" style={{ height: "5px" }}>
-                                <div className="progress-bar" role="progressbar" style={{ width: "55%" }} aria-valuenow="70"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>PHP</p>
-                            <div className="progress rounded" style={{ height: "5px" }}>
-                                <div className="progress-bar" role="progressbar" style={{ width: "55%" }} aria-valuenow="75"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>NodeJS</p>
-                            <div className="progress rounded" style={{ height: "5px" }}>
-                                <div className="progress-bar" role="progressbar" style={{ width: "30%" }} aria-valuenow="75"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>MySQL</p>
-                            <div className="progress rounded" style={{ height: "5px" }}>
-                                <div className="progress-bar" role="progressbar" style={{ width: "55%" }} aria-valuenow="78"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>MongoDB</p>
-                            <div className="progress rounded mb-2" style={{ height: "5px" }}>
-                                <div className="progress-bar" role="progressbar" style={{ width: "40%" }} aria-valuenow="50"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
+
+                            {
+                                profileData.skills.map((x, i) =>
+                                (
+                                    <>
+                                        <p className="mt-2 mb-2" style={{ fontSize: ".77rem" }} key={i}>{x.value}</p>
+                                        <div className="progress rounded" style={{ height: "5px" }}>
+                                            <div className="progress-bar" role="progressbar" style={{ width: x.range + "%" }} aria-valuenow={x.range}
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </>
+                                )
+                                )
+                            }
+
+                        </div>
+                    </div>
+
+                    {/* Education  */}
+                    <div className="card mt-4 mb-lg-0">
+                        <h5 class="card-header">Extracurricular activity </h5>
+                        <div class="card-body">
+                            {
+                                profileData.extra_activities.map((x, i) =>
+                                (<>
+                                    <ul class="list-group list-group-light list-group-small" key={i}>
+                                        <li class="list-group-item px-4"><b>{x.activity_name}</b></li>
+                                        <li class="list-group-item px-5">{x.inst_name}</li>
+                                        {(x.description) && <li class="list-group-item px-5">{x.description}</li>}
+                                    </ul>
+                                </>)
+
+                                )
+                            }
                         </div>
                     </div>
 
@@ -154,7 +156,7 @@ export default function Profile() {
                                     <p className="mb-0">Full Name</p>
                                 </div>
                                 <div className="col-sm-9">
-                                    <p className="text-muted mb-0">Shahadat Hossain</p>
+                                    <p className="text-muted mb-0">{profileData.fullname}</p>
                                 </div>
                             </div>
                             <hr />
@@ -163,7 +165,7 @@ export default function Profile() {
                                     <p className="mb-0">Email</p>
                                 </div>
                                 <div className="col-sm-9">
-                                    <p className="text-muted mb-0">shraiyan47@gmail.com</p>
+                                    <p className="text-muted mb-0">{profileData.email}</p>
                                 </div>
                             </div>
                             <hr />
@@ -181,7 +183,7 @@ export default function Profile() {
                                     <p className="mb-0">Mobile</p>
                                 </div>
                                 <div className="col-sm-9">
-                                    <p className="text-muted mb-0"> +88 01859506936 </p>
+                                    <p className="text-muted mb-0">{profileData.phone} </p>
                                 </div>
                             </div>
                             <hr />
@@ -190,12 +192,13 @@ export default function Profile() {
                                     <p className="mb-0">Address</p>
                                 </div>
                                 <div className="col-sm-9">
-                                    <p className="text-muted mb-0">Dhaka, Bangladesh</p>
+                                    <p className="text-muted mb-0">{profileData.long_location}</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    {/* About Me  */}
                     <div className="card mb-4">
                         <div className='card-header'>
                             <p className="mb-4"><span className="text-primary font-italic me-1">About me</span>  </p>
@@ -203,15 +206,10 @@ export default function Profile() {
                         <div className="card-body">
 
                             <p>
-                                As an experienced software engineer with a passion for innovative solutions, I thrive in collaborative environments that value effective communication and teamwork.
-                                Over the past three years, I have honed my expertise in JavaScript and delivered successful projects that have driven business growth.
-                                Now, I am eager to take on new challenges and expand my programming skill set as a valuable member of the Exodus Integrity Services team.
+                                {profileData.about_me}
                             </p>
                         </div>
                     </div>
-
-
-
 
                     {/* Experiences  */}
                     <div className="card mt-4 mb-md-0">
@@ -220,28 +218,66 @@ export default function Profile() {
                         </div>
                         <div className="card-body">
                             <div class="timeline">
-                                <div class="timeline-container timeline-left">
-                                    <div class="timeline-content">
-                                        <h4 className='text-danger'>February 2020</h4>
-                                        <h5 className='text-info'>Zaimah Technology</h5>
-                                        <p className='text'>Worked as a PHP Developer. Focused on raw coding for backend. Also worked on Vanilla JavaScript. Made some big projects like ERP & Some management system.</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-container timeline-right">
-                                    <div class="timeline-content">
-                                        <h4 className='text-danger'>February 2021</h4>
-                                        <h5 className='text-info'>Bdtask Limited</h5>
-                                        <p className='text'>Worked here as a PHP Developer too, but on a Framework called Codeigniter. Focused on rest api based back-end and also front-end. Also worked on Vanilla JavaScript. Made a Ticket Management System.</p>
-                                    </div>
-                                </div>
-                                <div class="timeline-container timeline-left">
-                                    <div class="timeline-content">
-                                        <h4 className='text-danger'>June 2021 </h4>
-                                        <small>(Currently Working)</small>
-                                        <h5 className='text-info'>LEADS Corporation Limited</h5>
-                                        <p className='text'>Working here as a ReactJS based front-end developer. Also doing RND on AI. Learning NodeJS and trying to get the MERN Stack as well.</p>
-                                    </div>
-                                </div>
+
+                                {
+                                    profileData.experience.map((x, i) => (
+                                        <>
+                                            <div className={(i % 2 !== 0) ? "timeline-container timeline-right" : "timeline-container timeline-left"}>
+                                                <div class="timeline-content">
+                                                    <h4 className='text-danger'>{x.duration}</h4>
+                                                    {
+                                                        (x.working) && <small>Currently Working</small>
+                                                    }
+                                                    <h5 className='text-info'>{x.inst_name}</h5>
+                                                    <p className='text-primary fw-bold' style={{ fontSize: "13px" }}>{x.position}</p>
+                                                    <p className='text'>{x.description}</p>
+                                                </div>
+                                            </div>
+                                        </>
+                                    ))
+                                }
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Projects  */}
+                    <div className="card mt-4 mb-md-0">
+                        <div className='card-header'>
+                            <p className="mb-4"><span className="text-primary font-italic me-1">Projects </span> </p>
+                        </div>
+                        <div className="card-body">
+                            <div class="row row-cols-1 row-cols-md-2 g-4">
+                                {
+                                    profileData.projects.map((x,i) => (
+                                        <>
+                                            <div class="col" key={i}>
+                                                <div class="card">
+
+                                                    <div class="card-body">
+                                                        <h5 class="card-title"><span className="text-primary me-1">{x.name}  </span></h5>
+                                                        <p class="card-text">
+                                                            <ul>
+                                                            {(x.description.split("//")).map(x=>(
+                                                                <>
+                                                                    <li>
+                                                                        {x}
+                                                                    </li>
+                                                                </>
+                                                            ))}
+                                                            </ul>
+                                                        </p>
+                                                        <div class="card-footer">
+                                                            <small class="fst-italic">{x.technologies}</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </>
+                                    ))
+                                }
+
 
                             </div>
                         </div>
