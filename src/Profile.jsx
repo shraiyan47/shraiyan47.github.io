@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import './assets/custom.css'
 import Propic from './assets/Caaspture.PNG'
-import CV from './assets/Shahadat Hossain CV with Photo attached -2.pdf'
+import CV from './assets/Shahadat Hossain CV - +8801859506936 .pdf'
 
 export default function Profile() {
 
@@ -10,8 +10,8 @@ export default function Profile() {
 
         document.head.innerHTML += `
             <meta name='description' content='This a portfolio of Shahadat Hossain. He is a Software Engineer. He like to do coding, problem solving. He started his carrer at 2020 as a Web based software developer. '/>
-            <meta name='keywords' content='Software Engineer, Shahadat Hossain, Raiyan, SHR47, PHP Developer, ReactJS Developer, React, ReactJS, JS, JavaScript, Web Developer, Software, Engineer '/>
-            <meta name='author' content='Shahadat Hossain (Raiyan) || SHR47'/>
+            <meta name='keywords' content='Software Engineer, Shahadat Hossain, Raiyan, SHR47, #shr47, PHP Developer, ReactJS Developer, React, ReactJS, JS, JavaScript, Web Developer, Software, Engineer, PHP, Codeigniter '/>
+            <meta name='author' content='Shahadat Hossain (Raiyan)'/>
             `
     }, []);
 
@@ -23,13 +23,14 @@ export default function Profile() {
                         <div className="card-body text-center">
                             <img src={Propic} alt="Shahadat Hossain (Raiyan) || #shr47"
                                 className="rounded-circle img-fluid" style={{ width: "150px" }} />
-                            <h1 style={{display: "none"}}>Shahadat Hossain Raiyan, shr47, Software Engineer</h1>
+                            <h1 style={{ display: "none" }}>Shahadat Hossain Raiyan, shr47, Software Engineer</h1>
                             <h5 className="my-3">Shahadat Hossain</h5>
                             <p className="text-muted mb-1">Full Stack Developer</p>
                             <p className="text-muted mb-4">Dhaka, Bangladesh</p>
                             <div className="d-flex justify-content-center mb-2">
                                 {/* <button type="button" className="btn btn-primary">Follow</button> */}
-                                <a href="mailto: shraiyan47@gmail.com"><button type="button" className="btn btn-outline-primary ms-1">Email Me</button></a>
+                                <a href="mailto: shraiyan47@gmail.com"><button type="button" className="btn btn-outline-primary ms-1"> <b>✉</b> Email Me</button></a>
+                                <a href="tel:+8801859506936"><button type="button" className="btn btn-outline-primary ms-1">📞 Call Me</button></a>
                                 <a download={CV} href={CV}><button type="button" className="btn btn-outline-primary ms-1">
                                     <i class="fa fa-download" aria-hidden="true"></i> &nbsp;
                                     CV
@@ -55,7 +56,7 @@ export default function Profile() {
                                 </li>
                                 <li className="list-group-item d-flex justify-content-between align-items-center p-3">
                                     <i className="fab fa-linkedin-in fa-lg" style={{ color: "#3b5998" }}></i>
-                                    <a href='https://stackoverflow.com/users/11209333/mr-shr47' target="_blank" rel="noreferrer"> <p className="mb-0">LinkedIn || shahadat-hossain-swe</p></a>
+                                    <a href='https://www.linkedin.com/in/shahadat-hossain-swe' target="_blank" rel="noreferrer"> <p className="mb-0">LinkedIn || shahadat-hossain-swe</p></a>
                                 </li>
                             </ul>
                         </div>
@@ -73,17 +74,68 @@ export default function Profile() {
                             <ul class="list-group list-group-light list-group-small">
                                 <li class="list-group-item px-4"><b>Ideal College, Dhanmondi</b></li>
                                 <li class="list-group-item px-5"> 2011 - 2014 || HSC</li>
-                                
+
                             </ul>
 
                             <ul class="list-group list-group-light list-group-small">
                                 <li class="list-group-item px-4"><b>Dhanmondi Govt. Boys' High School</b></li>
                                 <li class="list-group-item px-5"> 2001 - 2011 || SSC</li>
-                                
+
                             </ul>
 
 
 
+                        </div>
+                    </div>
+
+                    {/* Skills  */}
+
+                    <div className="card mt-4 mb-md-0">
+                        <div className='card-header'>
+                            <p className="mb-4"><span className="text-primary font-italic me-1">Skills</span> Status </p>
+
+                        </div>
+                        <div className="card-body">
+                            <p className="mb-1" style={{ fontSize: ".77rem" }}>HTML, CSS</p>
+                            <div className="progress rounded" style={{ height: "5px" }}>
+                                <div className="progress-bar" role="progressbar" style={{ width: "75%" }} aria-valuenow="90"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>Bootstrap</p>
+                            <div className="progress rounded" style={{ height: "5px" }}>
+                                <div className="progress-bar" role="progressbar" style={{ width: "75%" }} aria-valuenow="90"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>JavaScript</p>
+                            <div className="progress rounded" style={{ height: "5px" }}>
+                                <div className="progress-bar" role="progressbar" style={{ width: "50%" }} aria-valuenow="70"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>ReactJS</p>
+                            <div className="progress rounded" style={{ height: "5px" }}>
+                                <div className="progress-bar" role="progressbar" style={{ width: "55%" }} aria-valuenow="70"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>PHP</p>
+                            <div className="progress rounded" style={{ height: "5px" }}>
+                                <div className="progress-bar" role="progressbar" style={{ width: "55%" }} aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>NodeJS</p>
+                            <div className="progress rounded" style={{ height: "5px" }}>
+                                <div className="progress-bar" role="progressbar" style={{ width: "30%" }} aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>MySQL</p>
+                            <div className="progress rounded" style={{ height: "5px" }}>
+                                <div className="progress-bar" role="progressbar" style={{ width: "55%" }} aria-valuenow="78"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>MongoDB</p>
+                            <div className="progress rounded mb-2" style={{ height: "5px" }}>
+                                <div className="progress-bar" role="progressbar" style={{ width: "40%" }} aria-valuenow="50"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </div>
                     </div>
 
@@ -144,57 +196,22 @@ export default function Profile() {
                         </div>
                     </div>
 
-
-                    {/* Skills  */}
-
-                    <div className="card mb-4 mb-md-0">
+                    <div className="card mb-4">
                         <div className='card-header'>
-                            <p className="mb-4"><span className="text-primary font-italic me-1">Skills</span> Status </p>
-
+                            <p className="mb-4"><span className="text-primary font-italic me-1">About me</span>  </p>
                         </div>
                         <div className="card-body">
-                            <p className="mb-1" style={{ fontSize: ".77rem" }}>HTML, CSS</p>
-                            <div className="progress rounded" style={{ height: "5px" }}>
-                                <div className="progress-bar" role="progressbar" style={{ width: "90%" }} aria-valuenow="90"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>Bootstrap</p>
-                            <div className="progress rounded" style={{ height: "5px" }}>
-                                <div className="progress-bar" role="progressbar" style={{ width: "90%" }} aria-valuenow="90"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>JavaScript</p>
-                            <div className="progress rounded" style={{ height: "5px" }}>
-                                <div className="progress-bar" role="progressbar" style={{ width: "70%" }} aria-valuenow="70"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>ReactJS</p>
-                            <div className="progress rounded" style={{ height: "5px" }}>
-                                <div className="progress-bar" role="progressbar" style={{ width: "60%" }} aria-valuenow="70"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>PHP</p>
-                            <div className="progress rounded" style={{ height: "5px" }}>
-                                <div className="progress-bar" role="progressbar" style={{ width: "75%" }} aria-valuenow="75"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>NodeJS</p>
-                            <div className="progress rounded" style={{ height: "5px" }}>
-                                <div className="progress-bar" role="progressbar" style={{ width: "50%" }} aria-valuenow="75"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>MySQL</p>
-                            <div className="progress rounded" style={{ height: "5px" }}>
-                                <div className="progress-bar" role="progressbar" style={{ width: "78%" }} aria-valuenow="78"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <p className="mt-4 mb-1" style={{ fontSize: ".77rem" }}>MongoDB</p>
-                            <div className="progress rounded mb-2" style={{ height: "5px" }}>
-                                <div className="progress-bar" role="progressbar" style={{ width: "50%" }} aria-valuenow="50"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
+
+                            <p>
+                                As an experienced software engineer with a passion for innovative solutions, I thrive in collaborative environments that value effective communication and teamwork.
+                                Over the past three years, I have honed my expertise in JavaScript and delivered successful projects that have driven business growth.
+                                Now, I am eager to take on new challenges and expand my programming skill set as a valuable member of the Exodus Integrity Services team.
+                            </p>
                         </div>
                     </div>
+
+
+
 
                     {/* Experiences  */}
                     <div className="card mt-4 mb-md-0">
