@@ -80,11 +80,11 @@ export default function Profile() {
                     {/* Education  */}
                     <div className="card mt-4 mb-lg-0">
                         <h5 class="card-header">Education</h5>
-                        <div class="card-body">
+                        <div class="card-body p-1">
                             {
                                 profileData.education.map((x, i) =>
                                 (<>
-                                    <ul class="list-group list-group-light list-group-small" key={i}>
+                                    <ul class="list-group list-group-light list-group-small pb-1" key={i}>
                                         <li class="list-group-item px-4"><b>{x.inst_name}</b></li>
                                         <li class="list-group-item px-5">{x.duration}</li>
                                         <li class="list-group-item px-5">{x.degree}</li>
@@ -122,14 +122,14 @@ export default function Profile() {
                         </div>
                     </div>
 
-                    {/* Education  */}
+                    {/* Extracurricular  */}
                     <div className="card mt-4 mb-lg-0">
                         <h5 class="card-header">Extracurricular activity </h5>
-                        <div class="card-body">
+                        <div class="card-body p-1">
                             {
                                 profileData.extra_activities.map((x, i) =>
                                 (<>
-                                    <ul class="list-group list-group-light list-group-small" key={i}>
+                                    <ul class="list-group list-group-light list-group-small pb-1" key={i}>
                                         <li class="list-group-item px-4"><b>{x.activity_name}</b></li>
                                         <li class="list-group-item px-5">{x.inst_name}</li>
                                         {(x.description) && <li class="list-group-item px-5">{x.description}</li>}
@@ -250,22 +250,32 @@ export default function Profile() {
                         <div className="card-body">
                             <div class="row row-cols-1 row-cols-md-2 g-4">
                                 {
-                                    profileData.projects.map((x,i) => (
+                                    profileData.projects.map((x, i) => (
                                         <>
                                             <div class="col" key={i}>
                                                 <div class="card">
 
                                                     <div class="card-body">
-                                                        <h5 class="card-title"><span className="text-primary me-1">{x.name}  </span></h5>
+                                                        <h5 class="card-title"><span className="text-primary me-1">
+                                                            {
+                                                                (x.live_url !== "") ?
+                                                                   <a href={x.live_url} target='_blank'  rel="noreferrer" >
+                                                                      { x.name }
+                                                                   </a>
+                                                                    :
+                                                                    x.name 
+                                                            }
+
+                                                        </span></h5>
                                                         <p class="card-text">
                                                             <ul>
-                                                            {(x.description.split("//")).map(x=>(
-                                                                <>
-                                                                    <li>
-                                                                        {x}
-                                                                    </li>
-                                                                </>
-                                                            ))}
+                                                                {(x.description.split("//")).map(x => (
+                                                                    <>
+                                                                        <li>
+                                                                            {x}
+                                                                        </li>
+                                                                    </>
+                                                                ))}
                                                             </ul>
                                                         </p>
                                                         <div class="card-footer">
