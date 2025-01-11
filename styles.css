@@ -364,6 +364,7 @@ body {
     #skills-list li {
         padding: 10px;
         font-size: 1rem;
+        width: 40%;
     }
 
     .project-card h3,
