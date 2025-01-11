@@ -67,7 +67,7 @@ function gotogithub() {
 
 function downloadCV() {
   const fileUrl = "./Resume Of Shahadat Hossain.pdf"; // Replace with the actual path to your file
-  const fileName = "Resume Of Shahadat Hossain.pdf"; // Replace with the desired file name
+  const fileName = "Resume Of Shahadat Hossain - 01859506936.pdf"; // Replace with the desired file name
 
   // Create an anchor element
   const a = document.createElement("a");
