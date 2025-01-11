@@ -7,13 +7,15 @@
     <meta name="keywords" content="Shahadat Hossain, Software Engineer, Portfolio, Web Development, JavaScript, ReactJS, NextJS">
     <meta name="author" content="Shahadat Hossain">
     <title>Shahadat Hossain - Portfolio</title>
-    <link rel="stylesheet" href="./styles.css">
-    <script src="./scripts.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
+            <button class="hamburger">&#9776;</button> 
             <ul>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -43,11 +45,23 @@
             <div id="projects-container"></div>
         </section>
 
+        <section id="experience">
+            <h2>Experience</h2>
+            <div id="experience-container"></div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div id="education-container"></div>
+        </section>
+
         <section id="contact">
             <h2>Contact</h2>
             <p>Email: <a href="mailto:shraiyan47@gmail.com">shraiyan47@gmail.com</a></p>
         </section>
     </main>
+
+    <button id="goToTopBtn" class="go-top-btn" onclick="goToTop()">↑</button>
 
     <footer>
         <p>&copy; 2025 Shahadat Hossain. All rights reserved.</p>
