@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Shahadat Hossain, a passionate Software Engineer specializing in web development, AI, and scalable applications.">
-    <meta name="keywords" content="Shahadat Hossain, Software Engineer, Portfolio, Web Development, JavaScript, ReactJS, NextJS">
+    <meta name="description"
+        content="Portfolio of Shahadat Hossain, a passionate Software Engineer specializing in web development, AI, and scalable applications.">
+    <meta name="keywords"
+        content="Shahadat Hossain, Software Engineer, Portfolio, Web Development, JavaScript, ReactJS, NextJS, shr47, shraiyan47">
     <meta name="author" content="Shahadat Hossain">
+
+    <meta property="og:title" content="Shahadat Hossain - Portfolio">
+    <meta property="og:description"
+        content="Portfolio of Shahadat Hossain, a passionate Software Engineer specializing in web development, AI, and scalable applications.">
+    <!-- <meta property="og:image" content="https://yourwebsite.com/image.jpg"> -->
+    <!-- <meta property="og:url" content="https://yourwebsite.com/your-page"> -->
+    <meta property="og:type" content="website">
+
+    <!-- Optional Open Graph Tags -->
+    <meta property="og:site_name" content="Shahadat Hossain - Portfolio">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card Meta Tags (Optional but recommended for better appearance on Twitter) -->
+    <!-- <meta name="twitter:card" content="summary_large_image"> -->
+    <meta name="twitter:title" content="Shahadat Hossain - Portfolio">
+    <meta name="twitter:description"
+        content="Portfolio of Shahadat Hossain, a passionate Software Engineer specializing in web development, AI, and scalable applications.">
+    <!-- <meta name="twitter:image" content="https://yourwebsite.com/image.jpg"> -->
+
+
     <title>Shahadat Hossain - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
 </head>
+
 <body>
     <header>
         <nav>
-            <button class="hamburger">&#9776;</button> 
+            <button class="hamburger">&#9776;</button>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -26,7 +50,8 @@
 
     <main>
         <section id="hero">
-            <h1>Shahadat Hossain</h1>
+            <h1>Shahadat Hossain</h1> <button class="github" onclick="gotogithub()"> Github </button> <button class="share" onclick="copyProfileLink()"> Copy Profile Link
+            </button>
             <p>Software Engineer | Web Development | AI Enthusiast</p>
         </section>
 
@@ -57,14 +82,16 @@
 
         <section id="contact">
             <h2>Contact</h2>
+            <br/>
             <p>Email: <a href="mailto:shraiyan47@gmail.com">shraiyan47@gmail.com</a></p>
         </section>
     </main>
 
-    <button id="goToTopBtn" class="go-top-btn" onclick="goToTop()">↑</button>
 
     <footer>
         <p>&copy; 2025 Shahadat Hossain. All rights reserved.</p>
     </footer>
 </body>
+<button id="goToTopBtn" class="go-top-btn" onclick="goToTop()">↑</button>
+
 </html>

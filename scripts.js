@@ -3,15 +3,29 @@
 document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.querySelector(".hamburger");
   const nav = document.querySelector("nav");
-  var x = 1;
+
+  // Track whether the menu is open or closed
+  let isMenuOpen = false;
+
+  // Toggle the menu on hamburger click
   hamburger.addEventListener("click", () => {
-    console.log(nav.classList.value);
-    if(x == 1){
-        nav.classList.toggle("");
-        x = 0;
-    }else{
-        nav.classList.toggle("active");
-        x = 1;
+    nav.classList.toggle("active"); // Toggle "active" class
+    isMenuOpen = !isMenuOpen; // Change the state of the menu
+
+    // Optionally log to check if it's opening or closing
+    console.log(isMenuOpen ? "Menu opened" : "Menu closed");
+  });
+
+  // Close the menu if the user clicks outside of the menu
+  document.addEventListener("click", (event) => {
+    if (
+      !nav.contains(event.target) &&
+      !hamburger.contains(event.target) &&
+      isMenuOpen
+    ) {
+      nav.classList.remove("active");
+      isMenuOpen = false; // Reset the state of the menu
+      console.log("Menu closed by clicking outside");
     }
   });
 
@@ -26,6 +40,30 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch((error) => console.error("Error loading JSON data:", error));
 });
+
+function copyProfileLink() {
+  // Get the current URL
+  const currentUrl = window.location.href;
+
+  // Create a temporary input element to hold the URL
+  const tempInput = document.createElement("input");
+  tempInput.value = currentUrl;
+  document.body.appendChild(tempInput);
+
+  // Select and copy the URL
+  tempInput.select();
+  document.execCommand("copy");
+
+  // Remove the temporary input element
+  document.body.removeChild(tempInput);
+
+  // Optionally, display a success message
+  alert("Profile link copied to clipboard!");
+}
+
+function gotogithub() {
+    window.open('https://github.com/shraiyan47',"_blank")
+}
 
 function populateAbout(about) {
   document.getElementById("about-description").textContent = about;
@@ -125,19 +163,20 @@ function populateEducation(education) {
   });
 }
 
+window.onscroll = function () {
+  let scrollPosition = window.scrollY || document.documentElement.scrollTop;
+  let pageHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
 
-window.onscroll = function() {
-    let scrollPosition = window.scrollY || document.documentElement.scrollTop;
-    let pageHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    
-    // Show button after scrolling past 25% of the page height
-    if (scrollPosition > pageHeight * 0.25) {
-        document.getElementById("goToTopBtn").style.display = "block";
-    } else {
-        document.getElementById("goToTopBtn").style.display = "none";
-    }
+  // Show button after scrolling past 25% of the page height
+  if (scrollPosition > pageHeight * 0.25) {
+    document.getElementById("goToTopBtn").style.display = "block";
+  } else {
+    document.getElementById("goToTopBtn").style.display = "none";
+  }
 };
 
 function goToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
