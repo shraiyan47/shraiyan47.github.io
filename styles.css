@@ -1,0 +1,73 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1b2838; /* Dark Army Green */
+    color: #f5f5f5;
+}
+
+header {
+    background-color: #640d14; /* Dark Rose Red */
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #0077be; /* Royal Navy Blue */
+}
+
+#hero {
+    text-align: center;
+    padding: 5em 1em;
+    background-color: #283747;
+}
+
+#hero h1 {
+    color: #0077be;
+}
+
+#about, #skills, #projects, #contact {
+    padding: 3em 1em;
+}
+
+#skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+#skills-list li {
+    background-color: #640d14;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+#projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+footer {
+    background-color: #640d14;
+    text-align: center;
+    padding: 1em 0;
+}

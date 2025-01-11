@@ -1,0 +1,34 @@
+{
+    "about": "I am Shahadat Hossain, a passionate Software Engineer with expertise in JavaScript development, ReactJS, and NextJS. I thrive on creating scalable and user-friendly web applications.",
+    "skills": [
+        "JavaScript",
+        "ReactJS",
+        "NextJS",
+        "Node.js",
+        "Express.js",
+        "HTML",
+        "CSS",
+        "PostgreSQL",
+        "Git",
+        "CI/CD Pipelines",
+        "Linux",
+        "Agile Scrum Methodologies"
+    ],
+    "projects": [
+        {
+            "title": "AI-Powered Recruitment System",
+            "description": "Developed an AI-based platform for streamlining recruitment processes.",
+            "link": "https://github.com/example/recruitment-system"
+        },
+        {
+            "title": "Cash Flow Prediction Service",
+            "description": "Built a service to predict financial cash flow using machine learning.",
+            "link": "https://github.com/example/cash-flow-prediction"
+        },
+        {
+            "title": "Language Learning App",
+            "description": "Created a mobile-friendly application for language learning.",
+            "link": "https://github.com/example/language-learning-app"
+        }
+    ]
+}
