@@ -62,7 +62,20 @@ function copyProfileLink() {
 }
 
 function gotogithub() {
-    window.open('https://github.com/shraiyan47',"_blank")
+  window.open("https://github.com/shraiyan47", "_blank");
+}
+
+function downloadCV() {
+  const fileUrl = "./Resume Of Shahadat Hossain.pdf"; // Replace with the actual path to your file
+  const fileName = "Resume Of Shahadat Hossain.pdf"; // Replace with the desired file name
+
+  // Create an anchor element
+  const a = document.createElement("a");
+  a.href = fileUrl;
+  a.download = fileName; // This triggers the download
+  document.body.appendChild(a); // Append the anchor element to the body
+  a.click(); // Simulate a click to start the download
+  document.body.removeChild(a); // Remove the anchor element after the download is triggered
 }
 
 function populateAbout(about) {
