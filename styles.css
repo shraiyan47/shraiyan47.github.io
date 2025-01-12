@@ -289,7 +289,7 @@ body {
 /* Hover Effects */
 .hover-effect:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 16, 163, 0.3);
+    box-shadow: 0 8px 20px rgba(4, 155, 155, 0.4);
 }
 
 /* Shadow Styling */
