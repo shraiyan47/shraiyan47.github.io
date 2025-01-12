@@ -150,7 +150,10 @@ function populateEducation(education) {
   const educationContainer = document.getElementById("education-container");
   education.forEach((edu) => {
     const eduCard = document.createElement("div");
-    eduCard.classList.add("edu-card", "shadow", "border", "bg-light");
+    eduCard.classList.add("edu-card", "shadow",
+      "border",
+      "hover-effect",
+      "bg-light");
 
     const degree = document.createElement("h3");
     degree.textContent = edu.degree || edu.certificate;
