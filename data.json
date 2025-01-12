@@ -20,17 +20,22 @@
         {
             "title": "AI-Powered Recruitment System",
             "description": "Developed an AI-based platform for streamlining recruitment processes.",
-            "link": "https://github.com/example/recruitment-system"
+            "link": "https://hire-hub-six.vercel.app/"
         },
         {
             "title": "Cash Flow Prediction Service",
             "description": "Built a service to predict financial cash flow using machine learning.",
-            "link": "https://github.com/example/cash-flow-prediction"
+            "link": "#"
         },
         {
             "title": "Language Learning App",
             "description": "Created a mobile-friendly application for language learning.",
-            "link": "https://github.com/example/language-learning-app"
+            "link": "https://nakhlah-language-learning-app.vercel.app"
+        },
+        {
+            "title": "Star ERP",
+            "description": "Created an ERP system for a plastic industry. It can track whole production procedure, maintainable HR module, Dual Account system integrated with production, Export & Import Track and Inventory management system.",
+            "link": "#"
         }
     ],
     "experience": [
