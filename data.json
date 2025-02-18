@@ -31,7 +31,7 @@
         {
             "title": "IMS Services",
             "description": "A landing page with a content management system for a student counseling service. Frontend built with NextJS, backend with ExpressJS, and MongoDB for the database.",
-            "link": "#"
+            "link": "https://imsservicesbd.com"
         },
         {
             "title": "Audit Tracking and Risk Dashboard",
@@ -41,12 +41,12 @@
         {
             "title": "YCH",
             "description": "A school program management system that rewards students based on program success. Frontend developed with NextJS, Redux, Material UI, Tailwind, and QR Scanner library.",
-            "link": "#"
+            "link": "https://vehayamachanechakadosh.com/"
         },
         {
             "title": "GivingAMP",
             "description": "An event and campaign management system where people donate for events and campaigns.",
-            "link": "#"
+            "link": "https://givingamp.com/home/"
         },
         {
             "title": "Cash Flow Prediction Service",
@@ -71,7 +71,7 @@
         {
             "title": "ICM Freight",
             "description": "An export-import record entry system with basic HR and accounting features. Developed using PHP, JavaScript, HTML, CSS, and Bootstrap4.",
-            "link": "#"
+            "link": "https://icmfreight.com/login.php"
         },
         {
             "title": "NikahBangla",
