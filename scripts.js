@@ -232,7 +232,7 @@ function populateGallery(gallery) {
       imageWrapper.classList.add("gallery-image-wrapper");
       
       const image = document.createElement("img");
-      image.src = `./images/${project.project_name.toLowerCase()}/${imagePath}`;
+      image.src = imagePath;
       image.alt = `${project.project_name} screenshot`;
       image.loading = "lazy"; // Add lazy loading
       

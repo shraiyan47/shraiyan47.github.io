@@ -18,23 +18,63 @@
     ],
     "projects": [
         {
-            "title": "AI-Powered Recruitment System",
-            "description": "Developed an AI-based platform for streamlining recruitment processes.",
-            "link": "https://hire-hub-six.vercel.app/"
-        },
-        {
-            "title": "Cash Flow Prediction Service",
-            "description": "Built a service to predict financial cash flow using machine learning.",
-            "link": "#"
-        },
-        {
-            "title": "Language Learning App",
-            "description": "Created a mobile-friendly application for language learning.",
+            "title": "Nakhlah",
+            "description": "An Arabic language learning platform. Worked on frontend using NextJS, Redux, Zustand, Tailwind, and React Google Login.",
             "link": "https://nakhlah-language-learning-app.vercel.app"
         },
         {
+            "title": "HireHub",
+            "description": "A hiring system with automation and AI. Utilized NextJS, Zustand, and React Quill.",
+            "link": "https://hire-hub-six.vercel.app/"
+        },
+        {
+            "title": "IMS Services",
+            "description": "A landing page with a content management system for a student counseling service. Frontend built with NextJS, backend with ExpressJS, and MongoDB for the database.",
+            "link": "#"
+        },
+        {
+            "title": "Audit Tracking and Risk Dashboard",
+            "description": "An audit issue management system. Full stack development using MongoDB, ExpressJS, and NextJS.",
+            "link": "#"
+        },
+        {
+            "title": "YCH",
+            "description": "A school program management system that rewards students based on program success. Frontend developed with NextJS, Redux, Material UI, Tailwind, and QR Scanner library.",
+            "link": "#"
+        },
+        {
+            "title": "GivingAMP",
+            "description": "An event and campaign management system where people donate for events and campaigns.",
+            "link": "#"
+        },
+        {
+            "title": "Cash Flow Prediction Service",
+            "description": "A service to predict financial cash flow using machine learning with Python, LSTM, GRU, and Bidirectional.",
+            "link": "#"
+        },
+        {
+            "title": "RecruitGenie",
+            "description": "An advanced hiring platform with cheating prevention, face recognition, automatic test generation, hiring pipeline maintenance, and CV scoring.",
+            "link": "#"
+        },
+        {
             "title": "Star ERP",
-            "description": "Created an ERP system for a plastic industry. It can track whole production procedure, maintainable HR module, Dual Account system integrated with production, Export & Import Track and Inventory management system.",
+            "description": "A full production lifecycle management system including dual accounting, export-import management. Built with PHP, JavaScript, HTML, CSS, and Bootstrap3.",
+            "link": "#"
+        },
+        {
+            "title": "Mini Parcel",
+            "description": "A parcel management service developed using PHP, JavaScript, HTML, CSS, and Bootstrap3.",
+            "link": "#"
+        },
+        {
+            "title": "ICM Freight",
+            "description": "An export-import record entry system with basic HR and accounting features. Developed using PHP, JavaScript, HTML, CSS, and Bootstrap4.",
+            "link": "#"
+        },
+        {
+            "title": "NikahBangla",
+            "description": "A marriage media platform developed using NextJS, MongoDB, and ExpressJS.",
             "link": "#"
         }
     ],
@@ -91,7 +131,7 @@
                 ]
             },
             {
-                "project_name": "FRS",
+                "project_name": "GivingAMP",
                 "images": [
                     "./public/image/FRS/frs1.png",
                     "./public/image/FRS/frs2.png",
@@ -114,7 +154,7 @@
             {
                 "project_name": "NikahBangla",
                 "images": [
-                    "./public/image/nikah/nikah.png"
+                    "./public/image/nikah/nikah.jpg"
                 ]
             },
             {
