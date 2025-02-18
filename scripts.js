@@ -38,13 +38,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // fetch("file:///X:/Shahadat/shraiyan47.github.io/data.json")
+  // fetch("data.json")
   fetch("https://raw.githubusercontent.com/shraiyan47/shraiyan47.github.io/main/data.json")
     .then((response) => {
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
-      return response.json();
+      return response.json().catch((error) => {
+        throw new Error("Invalid JSON: " + error.message);
+      });
     })
     .then((data) => {
       populateAbout(data.about);
@@ -52,6 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
       populateProjects(data.projects);
       populateExperience(data.experience);
       populateEducation(data.education);
+      populateGallery(data.gallery); // Add this line
     })
     .catch((error) => {
       console.error("Error loading JSON data:", error);
@@ -206,6 +209,53 @@ function populateEducation(education) {
     eduCard.appendChild(year);
     eduCard.appendChild(description);
     educationContainer.appendChild(eduCard);
+  });
+}
+
+function populateGallery(gallery) {
+  const galleryContainer = document.getElementById("gallery-container");
+  galleryContainer.innerHTML = ''; // Clear existing content
+
+  gallery.data.forEach(project => {
+    const projectSection = document.createElement("div");
+    projectSection.classList.add("gallery-project");
+    
+    const projectTitle = document.createElement("h3");
+    projectTitle.textContent = project.project_name;
+    projectSection.appendChild(projectTitle);
+
+    const imageContainer = document.createElement("div");
+    imageContainer.classList.add("gallery-images");
+
+    project.images.forEach(imagePath => {
+      const imageWrapper = document.createElement("div");
+      imageWrapper.classList.add("gallery-image-wrapper");
+      
+      const image = document.createElement("img");
+      image.src = `./images/${project.project_name.toLowerCase()}/${imagePath}`;
+      image.alt = `${project.project_name} screenshot`;
+      image.loading = "lazy"; // Add lazy loading
+      
+      // Add click handler for full-size view
+      imageWrapper.addEventListener('click', () => {
+        const fullView = document.createElement("div");
+        fullView.classList.add("gallery-fullview");
+        const fullImage = image.cloneNode();
+        fullView.appendChild(fullImage);
+        
+        fullView.addEventListener('click', () => {
+          fullView.remove();
+        });
+        
+        document.body.appendChild(fullView);
+      });
+
+      imageWrapper.appendChild(image);
+      imageContainer.appendChild(imageWrapper);
+    });
+
+    projectSection.appendChild(imageContainer);
+    galleryContainer.appendChild(projectSection);
   });
 }
 

@@ -73,10 +73,56 @@
         }
     ],
     "gallery": {
-        "project1": [
-            "image1.png",
-            "image2.png",
-            "image3.png"
+        "data": [
+            {
+                "project_name": "Nakhlah",
+                "images": [
+                    "./public/image/nakhlah/image1.png",
+                    "./public/image/nakhlah/image2.png",
+                    "./public/image/nakhlah/image3.png"
+                ]
+            },
+            {
+                "project_name": "HireHub",
+                "images": [
+                    "./public/image/hirehub/hh1.png",
+                    "./public/image/hirehub/hh2.png",
+                    "./public/image/hirehub/hh3.png"
+                ]
+            },
+            {
+                "project_name": "FRS",
+                "images": [
+                    "./public/image/FRS/frs1.png",
+                    "./public/image/FRS/frs2.png",
+                    "./public/image/FRS/frs3.png",
+                    "./public/image/FRS/frs4.png"
+                ]
+            },
+            {
+                "project_name": "YCH",
+                "images": [
+                    "./public/image/ych/ych.png",
+                    "./public/image/ych/ych2.png",
+                    "./public/image/ych/ych3.png",
+                    "./public/image/ych/ych4.png",
+                    "./public/image/ych/ych5.png",
+                    "./public/image/ych/ych6.png",
+                    "./public/image/ych/ych7.png"
+                ]
+            },
+            {
+                "project_name": "NikahBangla",
+                "images": [
+                    "./public/image/nikah/nikah.png"
+                ]
+            },
+            {
+                "project_name": "IMS",
+                "images": [
+                    "./public/image/ims/ims.png"
+                ]
+            }
         ]
     }
 }

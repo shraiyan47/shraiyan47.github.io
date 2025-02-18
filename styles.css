@@ -276,23 +276,54 @@ body {
     object-fit: contain;
 }
 
-.image-error {
-    padding: 20px;
-    background: #333;
-    color: #ff4444;
-    text-align: center;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.gallery-project {
+  margin-bottom: 2rem;
 }
 
-.error {
-    color: #ff4444;
-    padding: 20px;
-    text-align: center;
-    background: rgba(255, 0, 0, 0.1);
-    border-radius: 8px;
+.gallery-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.gallery-image-wrapper {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.gallery-image-wrapper:hover {
+  transform: scale(1.05);
+}
+
+.gallery-image-wrapper img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-fullview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.gallery-fullview img {
+  max-width: 90%;
+  max-height: 90vh;
+  object-fit: contain;
 }
 
 /* Experience Section */
