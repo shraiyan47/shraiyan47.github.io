@@ -1,6 +1,7 @@
 /* Header Styling */
 header {
-    background-color: #640d14; /* Dark Rose Red */
+    background-color: #640d14;
+    /* Dark Rose Red */
     padding: 1em 0;
     text-align: center;
 }
@@ -23,25 +24,32 @@ nav a {
 }
 
 nav a:hover {
-    color: #0077be; /* Royal Navy Blue */
+    color: #0077be;
+    /* Royal Navy Blue */
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
-        gap: 1em; /* Adjust gap for vertical menu */
-        align-items: center; /* Center items in mobile view */
-        display: none; /* Hidden by default */
+        gap: 1em;
+        /* Adjust gap for vertical menu */
+        align-items: center;
+        /* Center items in mobile view */
+        display: none;
+        /* Hidden by default */
     }
 
     nav.active ul {
-        display: flex; /* Show navbar when active */
+        display: flex;
+        /* Show navbar when active */
     }
 
     nav a {
-        font-size: 1.2rem; /* Increase font size on mobile */
-        padding: 0.5em 1em; /* Add padding for better touch targets */
+        font-size: 1.2rem;
+        /* Increase font size on mobile */
+        padding: 0.5em 1em;
+        /* Add padding for better touch targets */
     }
 
     /* Hamburger Menu Button */
@@ -60,7 +68,7 @@ nav a:hover {
     }
 
     /* Initial State of Navbar Menu (Hidden) */
-    .hamburger:focus + ul {
+    .hamburger:focus+ul {
         display: flex;
     }
 }
@@ -68,11 +76,13 @@ nav a:hover {
 /* Desktop Menu: Ensure it's hidden in mobile */
 @media (min-width: 769px) {
     nav ul {
-        display: flex; /* Keep horizontal layout on larger screens */
+        display: flex;
+        /* Keep horizontal layout on larger screens */
     }
 
     .hamburger {
-        display: none; /* Hide hamburger on desktop */
+        display: none;
+        /* Hide hamburger on desktop */
     }
 }
 
@@ -100,7 +110,8 @@ h2 {
 }
 
 h1 button {
-    margin-left: 10px; /* Space between buttons */
+    margin-left: 10px;
+    /* Space between buttons */
     padding: 10px 20px;
     font-size: 14px;
     cursor: pointer;
@@ -151,6 +162,8 @@ body {
     padding: 0;
     margin: 0;
     display: flex;
+  align-items: center;
+  justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
 }
@@ -174,6 +187,8 @@ body {
 /* Projects Section */
 #projects-container {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 30px;
@@ -202,7 +217,7 @@ body {
 .project-card p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #B3B3B3;
+    color: #efefef;
     margin-bottom: 10px;
 }
 
@@ -277,58 +292,60 @@ body {
 }
 
 .gallery-project {
-  margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .gallery-images {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1rem;
-  padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .gallery-image-wrapper {
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .gallery-image-wrapper:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .gallery-image-wrapper img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
 }
 
 .gallery-fullview {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.9);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
 }
 
 .gallery-fullview img {
-  max-width: 90%;
-  max-height: 90vh;
-  object-fit: contain;
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
 }
 
 /* Experience Section */
 #experience-container {
     display: flex;
+  align-items: center;
+  justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 30px;
@@ -355,15 +372,18 @@ body {
     margin-bottom: 5px;
 }
 
-.job-duration, .job-description {
+.job-duration,
+.job-description {
     font-size: 1rem;
     line-height: 1.6;
-    color: #B3B3B3;
+    color: #efefef;
 }
 
 /* Education Section */
 #education-container {
     display: flex;
+  align-items: center;
+  justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 30px;
@@ -389,10 +409,12 @@ body {
     margin-bottom: 10px;
 }
 
-.edu-institution, .edu-year, .edu-description {
+.edu-institution,
+.edu-year,
+.edu-description {
     font-size: 1rem;
     line-height: 1.6;
-    color: #B3B3B3;
+    color: #efefef;
 }
 
 /* Hover Effects */
@@ -418,7 +440,10 @@ body {
 
 /* Responsive Design */
 @media (max-width: 1200px) {
-    .project-card, .job-card, .edu-card {
+
+    .project-card,
+    .job-card,
+    .edu-card {
         width: calc(40% - 20px);
     }
 
@@ -436,7 +461,9 @@ body {
         padding: 15px;
     }
 
-    .project-card, .job-card, .edu-card {
+    .project-card,
+    .job-card,
+    .edu-card {
         width: 100%;
     }
 
@@ -449,6 +476,9 @@ body {
     #about-description {
         font-size: 1rem;
         padding: 15px;
+        display: flex;
+  align-items: center;
+  justify-content: center;
     }
 
     .project-card h3 {
@@ -482,7 +512,9 @@ body {
         font-size: 1rem;
     }
 
-    .project-card p, .job-duration, .edu-institution {
+    .project-card p,
+    .job-duration,
+    .edu-institution {
         font-size: 0.9rem;
     }
 }
@@ -517,7 +549,7 @@ body {
 
 p {
     font-size: 18px;
-    color: #acacac;
+    color: #efefef;
     margin-top: 10px;
 }
 
