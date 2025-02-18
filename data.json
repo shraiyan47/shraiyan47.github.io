@@ -71,5 +71,12 @@
             "year": "2023",
             "description": "Specialized training in data science and artificial intelligence."
         }
-    ]
+    ],
+    "gallery": {
+        "project1": [
+            "image1.png",
+            "image2.png",
+            "image3.png"
+        ]
+    }
 }

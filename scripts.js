@@ -29,8 +29,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  fetch("data.json")
-    .then((response) => response.json())
+  // Add loading indicators
+  const sections = ['about', 'skills', 'projects', 'experience', 'education'];
+  sections.forEach(section => {
+    const element = document.getElementById(`${section}-container`) || document.getElementById(`${section}-description`) || document.getElementById(`${section}-list`);
+    if (element) {
+      element.innerHTML = '';
+    }
+  });
+
+  // fetch("file:///X:/Shahadat/shraiyan47.github.io/data.json")
+  fetch("https://raw.githubusercontent.com/shraiyan47/shraiyan47.github.io/main/data.json")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return response.json();
+    })
     .then((data) => {
       populateAbout(data.about);
       populateSkills(data.skills);
@@ -38,7 +53,16 @@ document.addEventListener("DOMContentLoaded", () => {
       populateExperience(data.experience);
       populateEducation(data.education);
     })
-    .catch((error) => console.error("Error loading JSON data:", error));
+    .catch((error) => {
+      console.error("Error loading JSON data:", error);
+      // Show error message on page
+      sections.forEach(section => {
+        const element = document.getElementById(`${section}-container`) || document.getElementById(`${section}-description`) || document.getElementById(`${section}-list`);
+        if (element) {
+          element.innerHTML = 'Error loading content. Please ensure you\'re running this site through a web server.';
+        }
+      });
+    });
 });
 
 function copyProfileLink() {
@@ -78,9 +102,15 @@ function downloadCV() {
   document.body.removeChild(a); // Remove the anchor element after the download is triggered
 }
 
+/**
+ * Populates the "About" section with the provided description.
+ * @param {string} about - The description text to be displayed in the "About" section.
+ */
 function populateAbout(about) {
   document.getElementById("about-description").textContent = about;
 }
+
+
 
 function populateSkills(skills) {
   const skillsList = document.getElementById("skills-list");

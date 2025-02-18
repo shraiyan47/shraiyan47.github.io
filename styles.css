@@ -217,6 +217,84 @@ body {
     color: #00CC66;
 }
 
+/* Gallery Project Section */
+.gallery-project {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: var(--card-bg);
+    border-radius: 8px;
+}
+
+.gallery-project h3 {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+    text-transform: capitalize;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.image-container {
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.image-modal img {
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.image-error {
+    padding: 20px;
+    background: #333;
+    color: #ff4444;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error {
+    color: #ff4444;
+    padding: 20px;
+    text-align: center;
+    background: rgba(255, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
 /* Experience Section */
 #experience-container {
     display: flex;
