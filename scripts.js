@@ -88,13 +88,16 @@ function copyProfileLink() {
   alert("Profile link copied to clipboard!");
 }
 
-function gotogithub() {
-  window.open("https://github.com/shraiyan47", "_blank");
-}
-
-function gotolinkedin() {
+function goto(param) {
+  if(param === "github"){
+    window.open("https://github.com/shraiyan47", "_blank");
+  }
+  else if(param === "linkedin"){
   window.open("https://www.linkedin.com/in/shahadat-hossain47", "_blank");
+  
+  }
 }
+ 
 
 function downloadCV() {
   const fileUrl = "./Resume Of Shahadat Hossain.pdf"; // Replace with the actual path to your file
