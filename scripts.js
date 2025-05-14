@@ -93,7 +93,7 @@ function gotogithub() {
 }
 
 function gotolinkedin() {
-window.open("https://www.linkedin.com/in/shahadat-hossain47/", "_blank");
+  window.open("https://www.linkedin.com/in/shahadat-hossain47", "_blank");
 }
 
 function downloadCV() {
