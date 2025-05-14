@@ -92,6 +92,10 @@ function gotogithub() {
   window.open("https://github.com/shraiyan47", "_blank");
 }
 
+function gotolinkedin() {
+window.open("https://www.linkedin.com/in/shahadat-hossain47/", "_blank");
+}
+
 function downloadCV() {
   const fileUrl = "./Resume Of Shahadat Hossain.pdf"; // Replace with the actual path to your file
   const fileName = "Resume Of Shahadat Hossain - 01859506936.pdf"; // Replace with the desired file name
