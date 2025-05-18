@@ -17,85 +17,70 @@
         "Linux",
         "Agile Scrum Methodologies"
     ],
-    "projects": [
-        {
-            "title": "Nakhlah",
-            "description": "An Arabic language learning platform. Worked on frontend using NextJS, Redux, Zustand, Tailwind, and React Google Login.",
-            "link": "https://nakhlah-language-learning-app.vercel.app"
-        },
-        {
-            "title": "HireHub",
-            "description": "A hiring system with automation and AI. Utilized NextJS, Zustand, and React Quill.",
-            "link": "https://hire-hub-six.vercel.app/"
-        },
-        {
-            "title": "IMS Services",
-            "description": "A landing page with a content management system for a student counseling service. Frontend built with NextJS, backend with ExpressJS, and MongoDB for the database.",
-            "link": "https://imsservicesbd.com"
-        },
-        {
-            "title": "Audit Tracking and Risk Dashboard",
-            "description": "An audit issue management system. Full stack development using MongoDB, ExpressJS, and NextJS.",
-            "link": "#"
-        },
-        {
-            "title": "YCH",
-            "description": "A school program management system that rewards students based on program success. Frontend developed with NextJS, Redux, Material UI, Tailwind, and QR Scanner library.",
-            "link": "https://vehayamachanechakadosh.com/"
-        },
-        {
-            "title": "GivingAMP",
-            "description": "An event and campaign management system where people donate for events and campaigns.",
-            "link": "https://givingamp.com/home/"
-        },
-        {
-            "title": "Cash Flow Prediction Service",
-            "description": "A service to predict financial cash flow using machine learning with Python, LSTM, GRU, and Bidirectional.",
-            "link": "#"
-        },
-        {
-            "title": "RecruitGenie",
-            "description": "An advanced hiring platform with cheating prevention, face recognition, automatic test generation, hiring pipeline maintenance, and CV scoring.",
-            "link": "#"
-        },
-        {
-            "title": "Star ERP",
-            "description": "A full production lifecycle management system including dual accounting, export-import management. Built with PHP, JavaScript, HTML, CSS, and Bootstrap3.",
-            "link": "#"
-        },
-        {
-            "title": "Mini Parcel",
-            "description": "A parcel management service developed using PHP, JavaScript, HTML, CSS, and Bootstrap3.",
-            "link": "#"
-        },
-        {
-            "title": "ICM Freight",
-            "description": "An export-import record entry system with basic HR and accounting features. Developed using PHP, JavaScript, HTML, CSS, and Bootstrap4.",
-            "link": "https://icmfreight.com/login.php"
-        },
-        {
-            "title": "NikahBangla",
-            "description": "A marriage media platform developed using NextJS, MongoDB, and ExpressJS.",
-            "link": "#"
-        }
-    ],
+     "projects": [
+    {
+      "title": "Nakhlah",
+      "description": "A multilingual Arabic language learning platform with gamification. Led frontend development for user/admin portals using Next.js, Redux, Zustand, and Tailwind CSS. Integrated Google OAuth and dynamic content creation workflows.",
+      "link": "https://nakhlah-language-learning-app.vercel.app"
+    },
+    {
+      "title": "IMS Services",
+      "description": "SEO-optimized landing page with a content management system for a student consultancy. Built full-stack using Next.js, Express.js, and MongoDB.",
+      "link": "https://imsservicesbd.com"
+    },
+    {
+      "title": "YCH",
+      "description": "School program assessment platform. Implemented QR-based login, multistep student evaluations, and reward dashboard using Next.js, Redux, Material UI, and Tailwind CSS.",
+      "link": "https://vehayamachanechakadosh.com/"
+    },
+    {
+      "title": "GivingAMP",
+      "description": "Event and campaign donation platform. Built campaign/company landing pages, donation flow, and event creation system. Developed using Next.js and Tailwind CSS.",
+      "link": "https://givingamp.com/home/"
+    },
+    {
+      "title": "Cash Flow Prediction Service",
+      "description": "Machine learning-based service to forecast financial inflows/outflows. Built with Python using LSTM, GRU, and Bidirectional RNNs. Focused on data preprocessing and model optimization.",
+      "link": "#"
+    },
+    {
+      "title": "RecruitGenie",
+      "description": "Smart recruitment platform featuring cheating prevention, hiring pipeline, and AI-powered CV scoring. Built major frontend modules including candidate portal, job posting, and test engine with webcam monitoring.",
+      "link": "#"
+    },
+    {
+      "title": "Star ERP",
+      "description": "Full-featured ERP with dual-ledger accounting, production management, export-import, and HR modules. Built using PHP, JavaScript, HTML, CSS, and Bootstrap 3.",
+      "link": "#"
+    },
+    {
+      "title": "ICM Freight",
+      "description": "Export-import logistics system with HR and accounting features. Developed with PHP, JavaScript, HTML, CSS, and Bootstrap 4.",
+      "link": "https://icmfreight.com/login.php"
+    },
+    {
+  "title": "True Light – Islamic App (Personal)",
+  "description": "Web platform providing Salah times, Hijri calendar, Al Quran with audio, Hadith collections, and Suhoor/Iftar timings. Built the landing page and core features using Next.js and Tailwind CSS. Ongoing development to expand with comprehensive Islamic tools.",
+  "link": "https://v0-true-ligth.vercel.app/"
+}
+  ],
     "experience": [
         {
             "title": "Software Engineer",
             "company": "FintechHub Limited",
-            "duration": "2024 - Present",
+            "duration": "July 2024 - Present",
             "description": "Contributed to diverse web applications, adhering to coding standards and maintaining comprehensive documentation."
         },
         {
             "title": "Software Engineer",
             "company": "LEADS Corporation Limited",
-            "duration": "2021 - 2024",
+            "duration": "June 2021 - June 2024",
             "description": "Collaborated on AI services including a Cash Flow Prediction system, Recruitment System, and Language Learning app, ensuring best practices in documentation and coding."
         },
         {
             "title": "Junior Software Engineer",
             "company": "Zaimah Technology Limited",
-            "duration": "2020 - 2021",
+            "duration": "February 2020 - June 2021",
             "description": "Developed an ERP service as part of a dedicated team."
         }
     ],
@@ -124,14 +109,6 @@
                 ]
             },
             {
-                "project_name": "HireHub",
-                "images": [
-                    "./public/image/hirehub/hh1.png",
-                    "./public/image/hirehub/hh2.png",
-                    "./public/image/hirehub/hh3.png"
-                ]
-            },
-            {
                 "project_name": "GivingAMP",
                 "images": [
                     "./public/image/FRS/frs1.png",
@@ -150,12 +127,6 @@
                     "./public/image/ych/ych5.png",
                     "./public/image/ych/ych6.png",
                     "./public/image/ych/ych7.png"
-                ]
-            },
-            {
-                "project_name": "NikahBangla",
-                "images": [
-                    "./public/image/nikah/nikah.jpg"
                 ]
             },
             {
