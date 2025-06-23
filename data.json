@@ -1,87 +1,39 @@
 {
-    "about": "I am Shahadat Hossain, a passionate Software Engineer with expertise in JavaScript development, ReactJS, and NextJS. I thrive on creating scalable and user-friendly web applications.",
+    "about": "Software Engineer specializing in React.js and Next.js with 4 years of experience building scalable, functional, and maintainable web applications. Experienced in developing reusable components, setting up design systems, and implementing efficient UI logic. Strong background in building real-world, role-based systems using modern frontend stacks and collaborating with cross-functional teams in agile environments.",
     "skills": [
         "JavaScript",
         "ReactJS",
         "NextJS",
-        "Node.js",
-        "Express.js",
-        "Python",
-        "PHP",
         "Tailwind CSS",
         "Bootstrap",
         "MaterialUI",
-        "PostgreSQL",
         "Git",
-        "CI/CD Pipelines",
-        "Linux",
         "Agile Scrum Methodologies"
     ],
      "projects": [
     {
-      "title": "Nakhlah",
-      "description": "A multilingual Arabic language learning platform with gamification. Led frontend development for user/admin portals using Next.js, Redux, Zustand, and Tailwind CSS. Integrated Google OAuth and dynamic content creation workflows.",
+      "title": "Nakhlah – Arabic Language Learning Platform (Fintech Hub Limited)",
+      "description": "Developed core frontend features using Next.js, Redux, and Zustand. Managed global state, optimized data flow, and reduced re-renders by 30%, improving UX by 50%. Collaborated on scalable UI and business logic across user and admin modules.",
       "link": "https://nakhlah-language-learning-app.vercel.app"
     },
-    {
-      "title": "IMS Services",
-      "description": "SEO-optimized landing page with a content management system for a student consultancy. Built full-stack using Next.js, Express.js, and MongoDB.",
-      "link": "https://imsservicesbd.com"
-    },
-    {
-      "title": "YCH",
-      "description": "School program assessment platform. Implemented QR-based login, multistep student evaluations, and reward dashboard using Next.js, Redux, Material UI, and Tailwind CSS.",
-      "link": "https://vehayamachanechakadosh.com/"
-    },
-    {
-      "title": "GivingAMP",
-      "description": "Event and campaign donation platform. Built campaign/company landing pages, donation flow, and event creation system. Developed using Next.js and Tailwind CSS.",
-      "link": "https://givingamp.com/home/"
-    },
-    {
-      "title": "Cash Flow Prediction Service",
-      "description": "Machine learning-based service to forecast financial inflows/outflows. Built with Python using LSTM, GRU, and Bidirectional RNNs. Focused on data preprocessing and model optimization.",
+         {
+      "title": "RecruitGenie – Smart Recruitment Platform (LEADS Corporation Limited)",
+      "description": "Built core frontend of RecruitGenie with React, focusing on reusable layouts, API integration, and efficient state handling. Led development of exam engine and cheating-prevention system. Delivered 80% of the UI, significantly improving the HR recruitment workflow.",
       "link": "#"
-    },
-    {
-      "title": "RecruitGenie",
-      "description": "Smart recruitment platform featuring cheating prevention, hiring pipeline, and AI-powered CV scoring. Built major frontend modules including candidate portal, job posting, and test engine with webcam monitoring.",
-      "link": "#"
-    },
-    {
-      "title": "Star ERP",
-      "description": "Full-featured ERP with dual-ledger accounting, production management, export-import, and HR modules. Built using PHP, JavaScript, HTML, CSS, and Bootstrap 3.",
-      "link": "#"
-    },
-    {
-      "title": "ICM Freight",
-      "description": "Export-import logistics system with HR and accounting features. Developed with PHP, JavaScript, HTML, CSS, and Bootstrap 4.",
-      "link": "https://icmfreight.com/login.php"
-    },
-    {
-  "title": "True Light – Islamic App (Personal)",
-  "description": "Web platform providing Salah times, Hijri calendar, Al Quran with audio, Hadith collections, and Suhoor/Iftar timings. Built the landing page and core features using Next.js and Tailwind CSS. Ongoing development to expand with comprehensive Islamic tools.",
-  "link": "https://v0-true-ligth.vercel.app/"
-}
+    }
   ],
     "experience": [
         {
             "title": "Software Engineer",
             "company": "FintechHub Limited",
-            "duration": "July 2024 - Present",
-            "description": "Contributed to diverse web applications, adhering to coding standards and maintaining comprehensive documentation."
+            "duration": "July 2024 - April 2025",
+            "description": "Worked on Nakhlah - a language learning app. I contributed to Front-end development using NextJS. "
         },
         {
             "title": "Software Engineer",
             "company": "LEADS Corporation Limited",
             "duration": "June 2021 - June 2024",
-            "description": "Collaborated on AI services including a Cash Flow Prediction system, Recruitment System, and Language Learning app, ensuring best practices in documentation and coding."
-        },
-        {
-            "title": "Junior Software Engineer",
-            "company": "Zaimah Technology Limited",
-            "duration": "February 2020 - June 2021",
-            "description": "Developed an ERP service as part of a dedicated team."
+            "description": "I worked on their recruitment system. After benchmarking, I sketched the UI and system flow. Then, using the ReactJS library, I developed most of the frontend. "
         }
     ],
     "education": [
@@ -90,12 +42,6 @@
             "institution": "Daffodil International University",
             "year": "2019",
             "description": "Focused on advanced programming and software engineering principles."
-        },
-        {
-            "certificate": "Data Science & AI Services Training",
-            "institution": "PUM Netherlands and BASIS",
-            "year": "2023",
-            "description": "Specialized training in data science and artificial intelligence."
         }
     ],
     "gallery": {
@@ -106,33 +52,6 @@
                     "./public/image/nakhlah/image1.png",
                     "./public/image/nakhlah/image2.png",
                     "./public/image/nakhlah/image3.png"
-                ]
-            },
-            {
-                "project_name": "GivingAMP",
-                "images": [
-                    "./public/image/FRS/frs1.png",
-                    "./public/image/FRS/frs2.png",
-                    "./public/image/FRS/frs3.png",
-                    "./public/image/FRS/frs4.png"
-                ]
-            },
-            {
-                "project_name": "YCH",
-                "images": [
-                    "./public/image/ych/ych.png",
-                    "./public/image/ych/ych2.png",
-                    "./public/image/ych/ych3.png",
-                    "./public/image/ych/ych4.png",
-                    "./public/image/ych/ych5.png",
-                    "./public/image/ych/ych6.png",
-                    "./public/image/ych/ych7.png"
-                ]
-            },
-            {
-                "project_name": "IMS",
-                "images": [
-                    "./public/image/ims/ims.png"
                 ]
             }
         ]
