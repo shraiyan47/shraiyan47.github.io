@@ -93,7 +93,7 @@ function goto(param) {
     window.open("https://github.com/shraiyan47", "_blank");
   }
   else if(param === "linkedin"){
-  window.open("https://www.linkedin.com/in/shahadat-hossain47", "_blank");
+  window.open("https://www.linkedin.com/in/shahadat-hossain-raiyan", "_blank");
   
   }
 }
