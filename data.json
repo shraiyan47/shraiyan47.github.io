@@ -24,12 +24,12 @@
  {
       "title": "IMS Services - Student Consultency Service (Freelancing)",
       "description": "Built with NextJS. Used NextJS Api for light backend tasks. University searching faster then ever. Content management working smoothly.",
-      "link": "#"
+      "link": "https://www.imsservicesbd.com/"
     },
  {
-      "title": "True Light - A Islamic Life style app (Personal)",
-      "description": "Built core frontend of RecruitGenie with React, focusing on reusable layouts, API integration, and efficient state handling. Led development of exam engine and cheating-prevention system. Delivered 80% of the UI, significantly improving the HR recruitment workflow.",
-      "link": "#"
+      "title": "True Light - An Islamic Life style app (Personal)",
+      "description": "Built with NextJS. Started with an AI generated template. Later added Quran audio, fixed Salah time, and Islamic tools. Working on Blog and smoothness.",
+      "link": "https://v0-true-ligth.vercel.app/"
     }
   ],
     "experience": [
