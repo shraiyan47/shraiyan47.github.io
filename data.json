@@ -14,10 +14,20 @@
     {
       "title": "Nakhlah – Arabic Language Learning Platform (Fintech Hub Limited)",
       "description": "Developed core frontend features using Next.js, Redux, and Zustand. Managed global state, optimized data flow, and reduced re-renders by 30%, improving UX by 50%. Collaborated on scalable UI and business logic across user and admin modules.",
-      "link": "https://nakhlah-language-learning-app.vercel.app"
+      "link": "https://nakhlah-user1.vercel.app/"
     },
          {
       "title": "RecruitGenie – Smart Recruitment Platform (LEADS Corporation Limited)",
+      "description": "Built core frontend of RecruitGenie with React, focusing on reusable layouts, API integration, and efficient state handling. Led development of exam engine and cheating-prevention system. Delivered 80% of the UI, significantly improving the HR recruitment workflow.",
+      "link": "#"
+    },
+ {
+      "title": "IMS Services - Student Consultency Service (Freelancing)",
+      "description": "Built with NextJS. Used NextJS Api for light backend tasks. University searching faster then ever. Content management working smoothly.",
+      "link": "#"
+    },
+ {
+      "title": "True Light - A Islamic Life style app (Personal)",
       "description": "Built core frontend of RecruitGenie with React, focusing on reusable layouts, API integration, and efficient state handling. Led development of exam engine and cheating-prevention system. Delivered 80% of the UI, significantly improving the HR recruitment workflow.",
       "link": "#"
     }
