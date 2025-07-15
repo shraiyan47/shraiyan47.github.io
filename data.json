@@ -12,7 +12,7 @@
     ],
      "projects": [
     {
-      "title": "Nakhlah – Arabic Language Learning Platform (Fintech Hub Limited)",
+      "title": "Nakhlah – Arabic Language Learning Platform (IMS Services)",
       "description": "Developed core frontend features using Next.js, Redux, and Zustand. Managed global state, optimized data flow, and reduced re-renders by 30%, improving UX by 50%. Collaborated on scalable UI and business logic across user and admin modules.",
       "link": "https://nakhlah-user1.vercel.app/"
     },
