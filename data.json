@@ -12,25 +12,36 @@
     ],
      "projects": [
     {
-      "title": "Nakhlah – Arabic Language Learning Platform (IMS Services)",
+      "title": "Nakhlah – Arabic Language Learning Platform",
       "description": "Developed core frontend features using Next.js, Redux, and Zustand. Managed global state, optimized data flow, and reduced re-renders by 30%, improving UX by 50%. Collaborated on scalable UI and business logic across user and admin modules.",
       "link": "https://nakhlah-user1.vercel.app/"
     },
          {
-      "title": "RecruitGenie – Smart Recruitment Platform (LEADS Corporation Limited)",
+      "title": "RecruitGenie – Smart Recruitment Platform ",
       "description": "Built core frontend of RecruitGenie with React, focusing on reusable layouts, API integration, and efficient state handling. Led development of exam engine and cheating-prevention system. Delivered 80% of the UI, significantly improving the HR recruitment workflow.",
-      "link": "#"
+      "link": "https://www.youtube.com/watch?v=a_R_X9ynBCw"
     },
  {
-      "title": "IMS Services - Student Consultency Service (IMS Services)",
+      "title": "IMS Services - Student Consultency Service ",
       "description": "Built with NextJS. Used NextJS Api for light backend tasks. University searching faster then ever. Content management working smoothly.",
       "link": "https://www.imsservicesbd.com/"
     },
  {
-      "title": "True Light - An Islamic Life style app (Personal)",
+      "title": "True Light - An Islamic Life style app ",
       "description": "Built with NextJS. Started with an AI generated template. Later added Quran audio, fixed Salah time, and Islamic tools. Working on Blog and smoothness.",
-      "link": "https://v0-true-ligth.vercel.app/"
-    }
+      "link": "https://islam.afiyatlife.com/"
+    },
+         {
+      "title": "YCH – School Program Assessment Portal",
+      "description": "Created a progress-tracking system with QR-based login, multi-step assessments, and an incentive-driven dashboard. Optimized system performance and significantly improved process efficiency.",
+      "link": "https://vehayamachanechakadosh.com/"
+    },
+         {
+      "title": "GivingAMP – Campaign and Donation Platform",
+      "description": "Developed a donation and campaign management platform, including landing pages, event workflows, and integrated payment systems.",
+      "link": "https://givingamp.com/home/"
+    },
+         
   ],
     "experience": [
         {
@@ -51,8 +62,21 @@
             "degree": "B.Sc. in Software Engineering",
             "institution": "Daffodil International University",
             "year": "2019",
-            "description": "Focused on advanced programming and software engineering principles."
+            "description": "Focused on advanced programming and software engineering principles. Major focus area: Architecture, Algorithms, AI, Database, Basic Networking, Documentation, Cyber security, Programming "
+        },
+        {
+            "degree": "Higher School Certificate",
+            "institution": "Ideal College",
+            "year": "2014",
+            "description": "Major Focus area: Physics, Chemistry, Biology, Mathematics"
+        },
+        {
+            "degree": "Secondary School Certificate",
+            "institution": "Dhanmondi Government Boys' High School",
+            "year": "2011",
+            "description": "Major Focus area: Physics, Chemistry, Biology, Mathematics"
         }
+        
     ],
     "gallery": {
         "data": [
@@ -63,7 +87,28 @@
                     "./public/image/nakhlah/image2.png",
                     "./public/image/nakhlah/image3.png"
                 ]
-            }
+            },
+            {
+                "project_name": "GivingAMP – Campaign and Donation Platform",
+                "images": [
+                    "./public/image/FRS/frs1.png",
+                    "./public/image/FRS/frs2.png",
+                    "./public/image/FRS/frs4.png",
+                    "./public/image/FRS/frs3.png"
+                ]
+            },
+            {
+                "project_name": "YCH – School Program Assessment Portal",
+                "images": [
+                    "./public/image/YCH/ych.png",
+                    "./public/image/YCH/ych2.png",
+                    "./public/image/YCH/ych3.png",
+                    "./public/image/YCH/ych4.png",
+                    "./public/image/YCH/ych5.png",
+                    "./public/image/YCH/ych6.png",
+                    "./public/image/YCH/ych7.png"
+                ]
+            },
         ]
     }
 }
