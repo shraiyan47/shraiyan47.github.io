@@ -40,7 +40,7 @@
       "title": "GivingAMP – Campaign and Donation Platform",
       "description": "Developed a donation and campaign management platform, including landing pages, event workflows, and integrated payment systems.",
       "link": "https://givingamp.com/home/"
-    },
+    }
          
   ],
     "experience": [
@@ -108,7 +108,7 @@
                     "./public/image/YCH/ych6.png",
                     "./public/image/YCH/ych7.png"
                 ]
-            },
+            }
         ]
     }
 }
