@@ -8,7 +8,13 @@
         "Bootstrap",
         "MaterialUI",
         "Git",
-        "Agile Scrum Methodologies"
+        "Agile Scrum Methodologies",
+        "MongoDB", "PostgreSQL", "MySQL",
+        "Redux", "Zustand",
+        "RESTful APIs", "MERN Stack", "MVC Architecture",
+         "Image Optimization", "Code Refactoring", "Performance Tuning", "Re-render Optimization",
+        "Python Basic", "Machine Learning Basics", "Face Detection Integration", "Data Analysis",
+        "Git", "Version Control", "Agile/Scrum", "SDLC", "Cross-functional Collaboration", "Remote Development"
     ],
      "projects": [
     {
@@ -48,13 +54,31 @@
             "title": "Software Engineer",
             "company": "IMS Services",
             "duration": "July 2024 - June 2025",
-            "description": "Worked on Nakhlah - a language learning app. I contributed to Front-end development using NextJS. "
+            "description": "● Developing and maintaining web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js) ● Building and improving internal student management software with REST API integration ● Collaborating with product and management teams to gather requirements and deliver scalable solutions ● Maintaining clean, modular, and production-ready code using Git version control "
+        },
+        {
+            "title": "Software Engineer, (ODS Department) ",
+            "company": "Fintech Hub Limited , Dhaka (Bangladesh) ",
+            "duration": "June 2024 – Operations Paused",
+            "description": "● Developed frontend applications using Next.js and JavaScript (ES6+) ● Built backend services using Node.js and Express.js with RESTful API architecture ● Worked with PostgreSQL and MongoDB for database design, queries, and data handling ● Improved application performance through image optimization and global state management refactoring ● Reduced unnecessary component re-renders and improved overall application responsiveness ● Collaborated with cross-functional teams following Agile development practices "
         },
         {
             "title": "Software Engineer",
             "company": "LEADS Corporation Limited",
             "duration": "June 2021 - June 2024",
-            "description": "I worked on their recruitment system. After benchmarking, I sketched the UI and system flow. Then, using the ReactJS library, I developed most of the frontend. "
+            "description": "● Frontend engineer for a SAAS-based recruitment and assessment platform developed from scratch ● Built job portals, admin dashboards, assessment systems, and reporting modules using React.js and Next.js ● Developed a secure online exam engine with AI camera-based cheating prevention using face detection integration ● Integrated REST APIs and managed complex application state using Redux and Zustand ● Participated in requirement analysis, system flow design, testing, and client communication ● Delivered scalable UI components and reusable layouts aligned with business requirements"
+        },
+        {
+            "title": "Software Engineer (PHP Developer)",
+            "company": "Zaimah Technology Limited , Dhaka (Bangladesh) ",
+            "duration": "February 2020 – May 2021 ",
+            "description": "● Developed web-based ERP and inventory management systems using raw PHP and MySQL ● Led development of a cattle management system with role-based workflows ● Designed backend logic, database schemas, and CRUD operations ● Implemented responsive frontend interfaces using HTML, CSS, JavaScript, and Bootstrap "
+        },
+        {
+            "title": "Remote Software Engineer (USA Clients)",
+            "company": "",
+            "duration": "",
+            "description": "● Worked remotely with US-based clients on production web applications ● Developed donation platforms, campaign management systems, and school assessment portals ● Built responsive dashboards and data-driven interfaces using React.js and Next.js ● Integrated REST APIs, authentication flows, and database-backed features ● Communicated directly with international stakeholders and delivered features independently across time zones "
         }
     ],
     "education": [
@@ -68,13 +92,13 @@
             "degree": "Higher School Certificate",
             "institution": "Ideal College",
             "year": "2014",
-            "description": "Major Focus area: Physics, Chemistry, Biology, Mathematics"
+            "description": ""
         },
         {
             "degree": "Secondary School Certificate",
             "institution": "Dhanmondi Government Boys' High School",
             "year": "2011",
-            "description": "Major Focus area: Physics, Chemistry, Biology, Mathematics"
+            "description": ""
         }
         
     ],
