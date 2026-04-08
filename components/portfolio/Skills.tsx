@@ -46,7 +46,7 @@ function SkillCard({ category, delay }: { category: (typeof skillCategories)[0];
   return (
     <div
       ref={ref}
-      className="border border-border rounded-xl p-6 bg-card card-glow opacity-0"
+      className="border border-border rounded-xl p-6 bg-card card-glow opacity-90"
     >
       <p className="font-mono text-xs tracking-widest uppercase mb-4 text-primary">
         {category.label}
@@ -65,7 +65,7 @@ export function Skills() {
 
   return (
     <section id="skills" className="py-24 max-w-6xl mx-auto px-6">
-      <div ref={titleRef} className="mb-16 opacity-0">
+      <div ref={titleRef} className="mb-16 opacity-90">
         <p className="font-mono text-xs text-primary tracking-widest uppercase mb-2">
           // 04. skills
         </p>

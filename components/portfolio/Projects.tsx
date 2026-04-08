@@ -41,11 +41,11 @@ function ProjectCard({ project, delay }: { project: Project; delay: number }) {
   return (
     <div
       ref={ref}
-      className={`group relative border border-border rounded-xl bg-card p-6 flex flex-col justify-between overflow-hidden opacity-0 card-glow cursor-pointer transition-all duration-300 ${sizeClass}`}
+      className={`group relative border border-border rounded-xl bg-card p-6 flex flex-col justify-between overflow-hidden opacity-90 card-glow cursor-pointer transition-all duration-300 ${sizeClass}`}
     >
       {/* Corner glow on hover */}
       <div
-        className="absolute top-0 right-0 w-32 h-32 rounded-full blur-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-500 pointer-events-none"
+        className="absolute top-0 right-0 w-32 h-32 rounded-full blur-2xl opacity-10 group-hover:opacity-22 transition-opacity duration-500 pointer-events-none"
         aria-hidden="true"
         style={{ background: "var(--glow)" }}
       />
@@ -65,7 +65,7 @@ function ProjectCard({ project, delay }: { project: Project; delay: number }) {
 
         {/* Description */}
         <p
-          className={`text-muted-foreground leading-relaxed ${
+          className={`text-muted-foreground group-hover:font-bold leading-relaxed ${
             project.size === "large" ? "text-sm md:text-base" : "text-sm"
           }`}
         >
@@ -96,7 +96,7 @@ export function Projects() {
     <section id="projects" className="py-24 bg-secondary/20">
       <div className="max-w-6xl mx-auto px-6">
         {/* Section header */}
-        <div ref={titleRef} className="mb-16 opacity-0">
+        <div ref={titleRef} className="mb-16 opacity-100">
           <p className="font-mono text-xs text-primary tracking-widest uppercase mb-2">
             // 03. projects
           </p>

@@ -4,7 +4,7 @@ import { useEffect, useRef, type RefObject } from "react"
 import { Github, Linkedin, Mail, Phone, type LucideIcon } from "lucide-react"
 import { portfolioData } from "@/lib/portfolio-data"
 
-function useScrollFade(delay = 0): RefObject<HTMLElement> {
+function useScrollFade(delay = 0): RefObject<HTMLElement | null> {
   const ref = useRef<HTMLElement>(null)
   useEffect(() => {
     const el = ref.current
@@ -75,7 +75,7 @@ function ContactCard({
       href={link.href}
       target={link.external ? "_blank" : undefined}
       rel={link.external ? "noopener noreferrer" : undefined}
-      className="group border border-border rounded-xl p-5 bg-card card-glow opacity-0 flex flex-col gap-3 hover:border-primary/40 transition-all duration-200"
+      className="group border border-border rounded-xl p-5 bg-card card-glow opacity-90 flex flex-col gap-3 hover:border-primary/40 transition-all duration-200"
     >
       <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-200">
         <IconComponent className="w-5 h-5 text-primary" />
@@ -96,7 +96,7 @@ export function Contact() {
   return (
     <section id="contact" className="py-24 bg-secondary/20">
       <div className="max-w-6xl mx-auto px-6">
-        <div ref={ref as RefObject<HTMLDivElement>} className="opacity-0 text-center mb-16">
+        <div ref={ref as RefObject<HTMLDivElement>} className="opacity-90 text-center mb-16">
           <p className="font-mono text-xs text-primary tracking-widest uppercase mb-2">
             // 05. contact
           </p>
