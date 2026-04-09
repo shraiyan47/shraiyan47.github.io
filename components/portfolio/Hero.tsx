@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react"
 import { Github, Linkedin, Mail, Phone, MapPin, ArrowDown } from "lucide-react"
 import { portfolioData } from "@/lib/portfolio-data"
+import Image from "next/image"
 
 export function Hero() {
   const { personal } = portfolioData
@@ -20,26 +21,33 @@ export function Hero() {
       id="about"
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16"
     >
-      {/* Background grid */}
+      {/* Background grid - uses CSS variable for theme support */}
       <div
-        className="absolute inset-0 pointer-events-none"
+        className="absolute inset-0 pointer-events-none bg-[image:linear-gradient(to_right,var(--grid-color)_1px,transparent_1px),linear-gradient(to_bottom,var(--grid-color)_1px,transparent_1px)] bg-[size:48px_48px]"
         aria-hidden="true"
-        style={{
-          backgroundImage:
-            "linear-gradient(to right, oklch(0.22 0.01 240 / 0.3) 1px, transparent 1px), linear-gradient(to bottom, oklch(0.22 0.01 240 / 0.3) 1px, transparent 1px)",
-          backgroundSize: "48px 48px",
-        }}
       />
       {/* Glow orb */}
       <div
-        className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full pointer-events-none blur-3xl opacity-10"
+        className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full pointer-events-none blur-3xl opacity-10 dark:opacity-10 bg-primary"
         aria-hidden="true"
-        style={{ background: "var(--glow)" }}
       />
 
       <div ref={ref} className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+        {/* Profile Image */}
+        <div className="mb-8 flex justify-center">
+          <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-primary/30 shadow-lg shadow-primary/10">
+            <Image
+              src="/images/profile.jpg"
+              alt={`${personal.name} - Profile Photo`}
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+        </div>
+
         {/* Status badge */}
-        <div className="inline-flex items-center gap-2 font-mono text-xs text-primary border border-primary/30 px-3 py-1 rounded-full mb-8 bg-primary/5">
+        <div className="inline-flex items-center gap-2 font-mono text-xs text-primary border border-primary/30 px-3 py-1 rounded-full mb-6 bg-primary/5">
           <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
           Available for opportunities
         </div>
