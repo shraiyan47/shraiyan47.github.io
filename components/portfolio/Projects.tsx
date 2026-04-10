@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react"
 import { Badge } from "@/components/ui/badge"
 import { ExternalLink } from "lucide-react"
 import { portfolioData } from "@/lib/portfolio-data"
+import Link from "next/link"
 
 function useScrollFade(delay = 0) {
   const ref = useRef<HTMLDivElement>(null)
@@ -54,20 +55,20 @@ function ProjectCard({ project, delay }: { project: Project; delay: number }) {
         {/* Project name */}
         <div className="flex items-start justify-between gap-2 mb-3">
           <h3
-            className={`font-bold text-foreground group-hover:text-primary transition-colors duration-200 text-balance ${
-              project.size === "large" ? "text-xl md:text-2xl" : "text-base"
-            }`}
+            className={`font-bold text-foreground group-hover:text-primary transition-colors duration-200 text-balance ${project.size === "large" ? "text-xl md:text-2xl" : "text-base"
+              }`}
           >
             {project.name}
           </h3>
-          <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors duration-200 flex-shrink-0 mt-0.5" />
+          <Link href={project.link} target="_blank" rel="noopener noreferrer">
+            <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors duration-200 flex-shrink-0 mt-0.5" />
+          </Link>
         </div>
 
         {/* Description */}
         <p
-          className={`text-muted-foreground group-hover:font-bold leading-relaxed ${
-            project.size === "large" ? "text-sm md:text-base" : "text-sm"
-          }`}
+          className={`text-muted-foreground group-hover:font-bold leading-relaxed ${project.size === "large" ? "text-sm md:text-base" : "text-sm"
+            }`}
         >
           {project.description}
         </p>

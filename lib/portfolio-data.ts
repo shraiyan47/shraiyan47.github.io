@@ -1,3 +1,5 @@
+import { link } from "fs";
+
 export const portfolioData = {
   personal: {
     name: "Shahadat Hossain",
@@ -62,6 +64,7 @@ export const portfolioData = {
         "Managed global state and optimized data flow, reducing re-renders by 30% and improving UX by 50%.",
       tech: ["Next.js", "Redux", "Zustand"],
       size: "large",
+      link: "https://uat.nakhlah.net",
     },
     {
       name: "RecruitGenie — Smart Recruitment",
@@ -69,6 +72,7 @@ export const portfolioData = {
         "Led development of an exam engine and cheating-prevention system with AI camera integration, delivering 80% of the UI.",
       tech: ["React", "API Integration"],
       size: "medium",
+      link: "https://www.youtube.com/watch?v=a_R_X9ynBCw",
     },
     {
       name: "YCH — Assessment Portal",
@@ -76,13 +80,26 @@ export const portfolioData = {
         "Built a student progress tracker with QR login and multistep assessments.",
       tech: ["Frontend"],
       size: "small",
+      link: "https://vehayamachanechakadosh.com/",
+
     },
     {
-      name: "GivingAMP & IMS Services",
+      name: "GivingAMP — Donation Platform",
       description:
         "Developed donation and campaign platforms with landing pages, event management, and payment flows.",
       tech: ["Full-Stack"],
       size: "small",
+      link: "https://givingamp.com/home/",
+
+    },
+    {
+      name: "IMS Services — Student Management Software",
+      description:
+        "Built internal student management software with REST API integration, improving administrative efficiency.",
+      tech: ["Full-Stack"],
+      size: "small",
+      link: "https://imsservicesbd.com/",
+
     },
   ],
   education: [
