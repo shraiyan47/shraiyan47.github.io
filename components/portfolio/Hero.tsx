@@ -37,7 +37,7 @@ export function Hero() {
         <div className="mb-8 flex justify-center">
           <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-primary/30 shadow-lg shadow-primary/10">
             <Image
-              src="https://raw.githubusercontent.com/shraiyan47/shraiyan-portfolio.github.io/refs/heads/main/public/images/profile.jpeg"
+              src="/images/profile.jpeg"
               alt={`${personal.name} - Profile Photo`}
               fill
               className="object-cover"

@@ -107,7 +107,7 @@ function ExperienceItem({
 
 
   return (
-    <div ref={ref} className="relative flex gap-6 opacity-100"> Edu
+    <div ref={ref} className="relative flex gap-6 opacity-100">
       {/* Timeline line + dot */}
       <div className="flex flex-col items-center">
         <div className="w-9 h-9 rounded-full border-2 border-primary/40 bg-card flex items-center justify-center flex-shrink-0 z-10">
