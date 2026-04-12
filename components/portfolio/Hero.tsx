@@ -4,6 +4,8 @@ import { useEffect, useRef } from "react"
 import { Github, Linkedin, Mail, Phone, MapPin, ArrowDown } from "lucide-react"
 import { portfolioData } from "@/lib/portfolio-data"
 import Image from "next/image"
+// import "@/public/images/profile.svg" // Ensure the profile image is included in the build
+import profileImage from "@/public/images/profile.svg"
 
 export function Hero() {
   const { personal } = portfolioData
@@ -37,7 +39,7 @@ export function Hero() {
         <div className="mb-8 flex justify-center">
           <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-primary/30 shadow-lg shadow-primary/10">
             <Image
-              src="/images/profile.jpeg"
+              src={profileImage}
               alt={`${personal.name} - Profile Photo`}
               fill
               className="object-cover"
