@@ -24,7 +24,7 @@ export const portfolioData = {
     {
       role: "Software Engineer, (IT Department & Consultancy)",
       company: "IMS Services, Dhaka",
-      dates: "February 2025 — Present",
+      dates: "February 2025 — March 2026",
       description:
         "Developing and maintaining web applications using the MERN stack. Building internal student management software with REST API integration. Maintaining clean, modular, production-ready code.",
     },
